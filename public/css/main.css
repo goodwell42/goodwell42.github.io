@@ -1736,6 +1736,7 @@ pre .javascript .function {
   margin-top: 0;
 }
 .site-author-image {
+  cursor: pointer;
   display: block;
   margin: 0 auto;
   padding: 2px;
@@ -1823,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aa20ff;
+  background: #1f9c7d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3017,6 +3018,10 @@ body {
   border-radius: 20px;
   padding: 30px 60px 30px 60px;
   background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+#posts code {
+  color: #ff0;
+  background-color: #f00;
 }
 #lv-container {
   border-radius: 20px;

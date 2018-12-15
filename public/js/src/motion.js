@@ -1,4 +1,7 @@
 /* global NexT: true */
+$('.site-author-image').click(function(){
+  window.location.href="https://github.com/goodwell42";
+});
 
 $(document).ready(function () {
   NexT.motion = {};
