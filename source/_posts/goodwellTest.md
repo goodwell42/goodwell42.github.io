@@ -2,6 +2,11 @@
 title: goodwellTest
 date: 2018-12-15 19:55:44
 tags: test
+toc: true
+password: goodwell
+categories: 
+- 回收站
+- test1
 ---
 
 ##Markdown语法
@@ -13,7 +18,7 @@ tags: test
 ###2.段落和换行
 段落：使用空行隔开自动
 换行：结尾使用两个  空格
-
+<!--more-->
 ###3.简单字体设置（插件快捷键）
 粗体：在 \*\* \*\* 之间输入（Ctrl+B）
 eg：这很 **粗**
@@ -65,5 +70,6 @@ eg:This is an [example link.](https://goodwell42.github.io)
 ###10.插入图片
 \!\[title]\(图片的外链地址)
 eg:
-
+###11.插入音乐
+[关忆北](https://m10.music.126.net/20181215233202/211fdf73a9ff7c30d5977f141942f7ec/ymusic/1b56/b371/d071/4a6e0d646166ad686565225076ecaf18.mp3)
 ###11.LaTeX公式编辑
