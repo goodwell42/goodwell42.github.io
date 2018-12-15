@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+  <url>
+    <loc>https://goodwell42.github.io/2018/12/15/goodwellTest/</loc>
+    <lastmod>2018-12-15T16:50:43.285Z</lastmod>
+    <data>
+        <display>
+        <title>goodwellTest</title>
+        <pubTime>2018-12-15T11:55:44.000Z</pubTime>
+        
+        <tag>test </tag>
+         
+         
+           
+             
+              <breadCrumb title="回收站" url="https://goodwell42.github.io/categories/%E5%9B%9E%E6%94%B6%E7%AB%99/"/>
+          
+             
+              <breadCrumb title="test1" url="https://goodwell42.github.io/categories/%E5%9B%9E%E6%94%B6%E7%AB%99/test1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://goodwell42.github.io/2018/12/15/hello-world/</loc>
+    <lastmod>2018-12-15T15:27:28.934Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-12-14T17:09:18.418Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="回收站" url="https://goodwell42.github.io/categories/%E5%9B%9E%E6%94%B6%E7%AB%99/"/>
+          
+             
+              <breadCrumb title="test2" url="https://goodwell42.github.io/categories/%E5%9B%9E%E6%94%B6%E7%AB%99/test2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://goodwell42.github.io/about/index.html</loc>
+    <lastmod>2018-12-15T15:27:28.934Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-12-15T15:36:04.497Z</pubTime>
+        
+         
+        </display>
+    </data>
+    </url>
+
+</urlset>
