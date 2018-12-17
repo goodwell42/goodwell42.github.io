@@ -2,9 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://goodwell42.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-12-17T08:59:14.455Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/tags/index.html</loc>
+    
+    <lastmod>2018-12-17T08:59:02.454Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/archives/index.html</loc>
+    
+    <lastmod>2018-12-17T08:27:15.756Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://goodwell42.github.io/404.html</loc>
     
     <lastmod>2018-12-17T08:08:58.019Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/timeline/index.html</loc>
+    
+    <lastmod>2018-12-17T07:26:51.118Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/uncategorized/RTFSC%E5%90%AF%E7%A4%BA/</loc>
+    
+    <lastmod>2018-12-15T18:38:54.451Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/%E5%9B%9E%E6%94%B6%E7%AB%99/test1/goodwellTest/</loc>
+    
+    <lastmod>2018-12-15T16:50:43.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/%E5%9B%9E%E6%94%B6%E7%AB%99/test2/hello-world/</loc>
+    
+    <lastmod>2018-12-15T15:27:28.934Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/about/index.html</loc>
+    
+    <lastmod>2018-12-15T15:27:28.934Z</lastmod>
     
   </url>
   

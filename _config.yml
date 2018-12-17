@@ -87,19 +87,17 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
+deploy: 
   type: git
   repo: https://github.com/goodwell42/goodwell42.github.io.git
   branch: master
   message: "{{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 # Extensions
-plugins:
-- hexo-generator-sitemap
-- hexo-generator-baidu-sitemap
-
-baidusitemap:
-  path: baidusitemap.xml
-
+# plugins:
+# - hexo-generator-sitemap
+# - hexo-generator-baidu-sitemap
 sitemap:
   path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
