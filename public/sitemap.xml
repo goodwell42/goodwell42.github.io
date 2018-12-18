@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://goodwell42.github.io//404.html</loc>
+    
+    <lastmod>2018-12-18T07:07:07.951Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://goodwell42.github.io/categories/index.html</loc>
     
     <lastmod>2018-12-17T08:59:14.455Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://goodwell42.github.io/archives/index.html</loc>
     
     <lastmod>2018-12-17T08:27:15.756Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://goodwell42.github.io/404.html</loc>
-    
-    <lastmod>2018-12-17T08:08:58.019Z</lastmod>
     
   </url>
   
