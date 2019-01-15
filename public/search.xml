@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[文档编写笔记]]></title>
+    <url>%2F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%2F%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99%2F%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[注意事项 论文任何地方都不可以出现中文； 标点符号后要有一个空格； 论文内部除解题部分以外都要细致认真的写。论文可以没有详细的解题步骤，但一定要有解决方案的构想和结果； 要详细讨论模型的设计方案及模型可能遇到的情况； 要有误差分析、稳定性分析； 不知道模型缺点的就不写，乱写一通说明对题目理解不深刻； 能搜出很多参考文献的关键词很有可能并非出题者所想（不要走题）； 有时候数据出现一些问题不一定是数据不够，可能是数据精度不够或者噪声较多；（尽量不要写数据量不大作为缺点）; 摘要不要引用文献; 论文内公式要与文字高度相同 ; 表格要尽量美观（显眼）; 要么使用三线表格（如下）要么使用中规中矩的表格 表格要有标题，数居中放置； 符号说明一般使用三线表格文字左对齐； 图; 要有图例； 放在一起做对比的两张图颜色、大小、刻度要保持一致； 不可以截图，会被判定为作弊。]]></content>
+      <categories>
+        <category>数学建模</category>
+        <category>文档编写</category>
+      </categories>
+      <tags>
+        <tag>数学建模</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F%E5%9B%9E%E6%94%B6%E7%AB%99%2Ftest2%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>回收站</category>
+        <category>test2</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[建模算法分类]]></title>
     <url>%2F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%2F%E7%AE%97%E6%B3%95%2F%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E5%88%86%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[算法分类美赛培训第一天 下午 关于数学建模中算法的简单分类 一、预测1. 灰色预测样本点6-15个 数据呈指数或曲线形式 2. 微分方程预测无法找到原始数据的关系，但可以找到原始数据变化速度的关系，通过公式推导转化为原始数据的关系 3. 回归分析预测求一个因变量与若干自变量之间的关系，若自变量变化因变量如何变化自变量之间协方差比较小，最好趋近于0，自变量相关性小；样本点个数n&gt;3k+1，k为自变量个数因变量要符合正态分布 4. 马尔可夫预测一个序列之间没有信息的传递，前后没有联系，数据之间随机性强，相互不影响 （每天的温度没有直接联系，预测温度高低的概率）只能得到概率 5. 时间序列预测与马尔可夫预测互补，至少两个点需要信息传递，ARMA模型、周期模型、季节模型等 6. 小波分析海量数据 无规律 将波分离，分离处出周期数据、规律性数据 可以做出时间序列做不出的数据，应用范围较广（高大上） 7. 神经网络预测大量数据 不需模型 只需输入输出 黑箱处理（检验、对照分析） 二、评价与决策1. 模糊综合评价评价一个对象 2. 主成分分析评价多个对象的水平并排序，指标见关联性很强 3. 数据包络分析优化问题，对各省发展状况进行评判 4. 秩和比综合评价同主成分分析，但指标间关联性不强 5. TOPSIS6. 投影寻踪综合评价法柔和多种算法（遗传算法、最优化理论等） 三、分析1. 方差分析看几类数据之间有无差异，差异性影响 2. 协方差分析有几个因素，只考虑一个因素对问题的影响，忽略其他因素 四、分类与判别1. 距离聚类（系统距离） 2. 关联性聚类（Q聚类 R聚类） 3. 层次聚类4. 密度聚类5. 其他聚类6. 贝叶斯判别（统计判别方法） 7. 费舍尔判别（训练样本较多） 8. 模糊识别（分好类的数据点较少） 五、关联与因果六、优化与控制1. 线性规划、整数规划、0-1规划（有约束、确定的目标） 2. 非线性规划与智能优化算法3. 多目标规划和目标规划（柔性约束、目标含糊、超过） 七、动态规划1. 网络优化（多因素交错复杂） 2. 排队论与计算机仿真3. 模糊规划（范围约束） 4. 灰色规划（难）]]></content>
@@ -79,14 +100,5 @@
       <tags>
         <tag>test</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F%E5%9B%9E%E6%94%B6%E7%AB%99%2Ftest2%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-      <categories>
-        <category>回收站</category>
-        <category>test2</category>
-      </categories>
   </entry>
 </search>
