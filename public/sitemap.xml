@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://goodwell42.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E5%BF%AB%E6%8D%B7%E9%94%AE/word%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    
+    <lastmod>2019-01-16T09:18:52.636Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E5%BF%AB%E6%8D%B7%E9%94%AE/%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    
+    <lastmod>2019-01-16T09:18:29.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E5%BF%AB%E6%8D%B7%E9%94%AE/%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE2/</loc>
+    
+    <lastmod>2019-01-16T09:18:23.086Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/LaTeX/LaTeX%E5%85%AC%E5%BC%8F%E7%BC%96%E8%BE%91/</loc>
+    
+    <lastmod>2019-01-15T16:23:16.154Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://goodwell42.github.io/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99/%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2019-01-15T16:08:56.675Z</lastmod>
@@ -9,7 +37,7 @@
   </url>
   
   <url>
-    <loc>https://goodwell42.github.io/categories/index.html</loc>
+    <loc>https://goodwell42.github.io/%E5%9B%9E%E6%94%B6%E7%AB%99/test2/hello-world/</loc>
     
     <lastmod>2019-01-15T15:54:45.479Z</lastmod>
     
@@ -37,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://goodwell42.github.io/Java/Spider/employ-info/</loc>
+    <loc>https://goodwell42.github.io/about/index.html</loc>
     
     <lastmod>2019-01-15T15:54:45.479Z</lastmod>
     
@@ -51,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://goodwell42.github.io/%E5%9B%9E%E6%94%B6%E7%AB%99/test2/hello-world/</loc>
+    <loc>https://goodwell42.github.io/uncategorized/RTFSC%E5%90%AF%E7%A4%BA/</loc>
     
     <lastmod>2019-01-15T15:54:45.479Z</lastmod>
     
@@ -72,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://goodwell42.github.io/about/index.html</loc>
-    
-    <lastmod>2019-01-15T15:54:45.479Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://goodwell42.github.io/archives/index.html</loc>
     
     <lastmod>2019-01-15T15:54:45.479Z</lastmod>
@@ -86,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://goodwell42.github.io/tags/index.html</loc>
+    <loc>https://goodwell42.github.io/categories/index.html</loc>
     
     <lastmod>2019-01-15T15:54:45.479Z</lastmod>
     
@@ -100,7 +121,14 @@
   </url>
   
   <url>
-    <loc>https://goodwell42.github.io/uncategorized/RTFSC%E5%90%AF%E7%A4%BA/</loc>
+    <loc>https://goodwell42.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-01-15T15:54:45.479Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/Java/Spider/employ-info/</loc>
     
     <lastmod>2019-01-15T15:54:45.479Z</lastmod>
     
