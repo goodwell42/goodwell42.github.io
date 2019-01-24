@@ -8,7 +8,7 @@ categories:
 - test1
 ---
 
-## Markdown语法
+## Markdown语法<!-- more -->
 ### 1.标题的设置
 （几级标题就使用几个“#”）
 

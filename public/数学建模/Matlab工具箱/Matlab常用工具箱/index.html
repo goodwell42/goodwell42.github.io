@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="google-site-verification" content="9HUf6ezOpFf73Y0w8eaFdX2rXMl4XmbEMOwRpS3fRvk">
+<meta name="baidu-site-verification" content="p1GieRH4fF">
+<script>
+    (function(){
+        if(''){
+            if (prompt('此文已设密，请输入密码') !== ''){
+                alert('密码错误！要不要问一下goodwell');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "ad95c87d"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数学建模,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="工具箱我的版本是MATLB R2017a，主要介绍曲线拟合与优化工具箱">
+<meta name="keywords" content="数学建模">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matlab常用工具箱">
+<meta property="og:url" content="https://goodwell42.github.io/数学建模/Matlab工具箱/Matlab常用工具箱/index.html">
+<meta property="og:site_name" content="GOODWELL&#39;S BLOG">
+<meta property="og:description" content="工具箱我的版本是MATLB R2017a，主要介绍曲线拟合与优化工具箱">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802185843617?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802190732769?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802190758651?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802190851990?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802191946188?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802191954566?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1548050674575.png">
+<meta property="og:updated_time" content="2019-01-21T07:36:45.693Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Matlab常用工具箱">
+<meta name="twitter:description" content="工具箱我的版本是MATLB R2017a，主要介绍曲线拟合与优化工具箱">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20180802185843617?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://goodwell42.github.io/数学建模/Matlab工具箱/Matlab常用工具箱/">
+
+
+
+
+
+  <title>Matlab常用工具箱 | GOODWELL'S BLOG</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4478864dba087d91a98ca744e6f1408b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+<!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/goodwell42"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GOODWELL'S BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江岭作鸽 | 山海为信<br> 岭鸽千里终见关，<br> 海信百年遗荒滩。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://goodwell42.github.io/数学建模/Matlab工具箱/Matlab常用工具箱/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="goodwell">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GOODWELL'S BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Matlab常用工具箱</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-21T14:45:07+08:00">
+                2019-01-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/数学建模/" itemprop="url" rel="index">
+                    <span itemprop="name">数学建模</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/数学建模/Matlab工具箱/" itemprop="url" rel="index">
+                    <span itemprop="name">Matlab工具箱</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/数学建模/Matlab工具箱/Matlab常用工具箱/" class="leancloud_visitors" data-flag-title="Matlab常用工具箱">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,114(字)
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8(分)
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="工具箱"><a href="#工具箱" class="headerlink" title="工具箱"></a>工具箱</h2><p>我的版本是MATLB R2017a，主要介绍曲线拟合与优化工具箱<a id="more"></a></p>
+<h3 id="Curve-fitting-–-gt-曲线拟合"><a href="#Curve-fitting-–-gt-曲线拟合" class="headerlink" title="Curve fitting –&gt; 曲线拟合"></a>Curve fitting –&gt; 曲线拟合</h3><h4 id="曲线函数选项"><a href="#曲线函数选项" class="headerlink" title="曲线函数选项"></a>曲线函数选项</h4><p>Exponential：指数逼近，有2种类型， a<em>exp(b</em>x) 、 a<em>exp(b</em>x) + c<em>exp(d</em>x)<br>Fourier：傅立叶逼近，有7种类型，基础型是 a0 + a1<em>cos(x</em>w) + b1<em>sin(x</em>w)<br>Gaussian：高斯逼近，有8种类型，基础型是 a1<em>exp(c1-((x-b1)/c1)^2)<br>Interpolant：插值逼近，有4种类型，linear、nearest neighbor、cubic spline、shape-preserving<br>Polynomial：多形式逼近，有9种类型，linear ~、quadratic ~、cubic ~、4-9th degree ~<br>Power：幂逼近，有2种类型，a</em>x^b 、a<em>x^b + c<br>Rational：有理数逼近，分子、分母共有的类型是linear ~、quadratic ~、cubic ~、4-5th degree ~；此外，分子还包括constant型<br>Smoothing Spline：平滑逼近<br>Sum of Sin Functions：正弦曲线逼近，有8种类型，基础型是 a1</em>sin(b1<em>x + c1)<br>Weibull：只有一种，a</em>b<em>x^(b-1)</em>exp(-a*x^b)</p>
+<h4 id="拟合效果评价"><a href="#拟合效果评价" class="headerlink" title="拟合效果评价"></a>拟合效果评价</h4><p>除了直观的观察图像和散点的拟合程度外，matlab还提供了几个评价参数</p>
+<ul>
+<li><strong>The sum of squares due to error (SSE)</strong> </li>
+<li><strong>R-square</strong> </li>
+<li><strong>Adjusted R-square</strong> </li>
+<li><strong>Root mean squared error (RMSE)</strong></li>
+</ul>
+<p>sse 这个统计量测量的是拟合值与实际值的总偏差和。它也被称为残差的平方求和 </p>
+<p><img src="https://img-blog.csdn.net/20180802185843617?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="公式1"></p>
+<p>值越小，拟合程度越好。<br>R-square由三个公式计算得来，衡量了拟合在解释数据变化方面的成功程度 </p>
+<p><img src="https://img-blog.csdn.net/20180802190732769?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="公式2"></p>
+<p><img src="https://img-blog.csdn.net/20180802190758651?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="公式3"></p>
+<p><img src="https://img-blog.csdn.net/20180802190851990?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="公式4"></p>
+<p>越接近1，表示模型在方差中所占的比例更大(with a value closer to 1 indicating that a greater proportion of variance is accounted for by the model)</p>
+<p>Adjusted R-square<br>调整后的R-平方统计量可以接受任何小于或等于1的值，而接近1的值表示更好的拟合。当模型包含无助于预测响应的项时，可能会出现负值。</p>
+<p>RMSE<br>由以下两个公式计算得出</p>
+<p><img src="https://img-blog.csdn.net/20180802191946188?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="公式5"></p>
+<p><img src="https://img-blog.csdn.net/20180802191954566?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NsYXJrX0ZpdHo4MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="公式6"></p>
+<p>与sse一样，RMSE值越小，拟合程度越好</p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1548050674575.png" alt="例子"></p>
+<hr>
+<h3 id="Optimization-–-gt-优化"><a href="#Optimization-–-gt-优化" class="headerlink" title="Optimization –&gt; 优化"></a>Optimization –&gt; 优化</h3><p>   <em>利用Matlab的优化工具箱，可以求解线性规划、非线性规划和多目标规划问题。具体而言，包括线性、非线性最小化，最大最小化，二次规划，半无限问题，线性、非线性方程（组）的求解，线性、非线性的最小二乘问题。另外，该工具箱还提供了线性、非线性最小化，方程求解，曲线拟合，二次规划等问题中大型课题的求解方法，为优化方法在工程中的实际应用提供了更方便快捷的途径。</em></p>
+<h4 id="优化工具箱中的函数"><a href="#优化工具箱中的函数" class="headerlink" title="优化工具箱中的函数"></a><strong>优化工具箱中的函数</strong></h4><p>​    <em>优化工具箱中的函数包括下面几类：</em></p>
+<p>​    <strong>1．最小化函数</strong></p>
+<p><center>表1 最小化函数表</center></p>
+<table>
+<thead>
+<tr>
+<th><strong>函    数</strong></th>
+<th><strong>描       述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>fgoalattain</em></td>
+<td>多目标达到问题</td>
+</tr>
+<tr>
+<td><em>fminbnd</em></td>
+<td>有边界的标量非线性最小化</td>
+</tr>
+<tr>
+<td><em>fmincon</em></td>
+<td>有约束的非线性最小化</td>
+</tr>
+<tr>
+<td><em>fminimax</em></td>
+<td>最大最小化</td>
+</tr>
+<tr>
+<td><em>fminsearch, fminunc</em></td>
+<td>无约束非线性最小化</td>
+</tr>
+<tr>
+<td><em>fseminf</em></td>
+<td>半无限问题</td>
+</tr>
+<tr>
+<td><em>linprog</em></td>
+<td>线性课题</td>
+</tr>
+<tr>
+<td><em>quadprog</em></td>
+<td>二次课题</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2．方程求解函数</strong></p>
+<p><center>表2 方程求解函数表</center></p>
+<table>
+<thead>
+<tr>
+<th><strong>函   数</strong></th>
+<th><strong>描       述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>/</em></td>
+<td>线性方程求解</td>
+</tr>
+<tr>
+<td><em>fsolve</em></td>
+<td>非线性方程求解</td>
+</tr>
+<tr>
+<td><em>fzero</em></td>
+<td>标量非线性方程求解</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3．最小二乘（曲线拟合）函数</strong></p>
+<p><center>表3 最小二乘函数表</center></p>
+<table>
+<thead>
+<tr>
+<th><strong>函   数</strong></th>
+<th><strong>描       述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>/</em></td>
+<td>线性最小二乘</td>
+</tr>
+<tr>
+<td><em>lsqlin</em></td>
+<td>有约束线性最小二乘</td>
+</tr>
+<tr>
+<td><em>lsqcurvefit</em></td>
+<td>非线性曲线拟合</td>
+</tr>
+<tr>
+<td><em>lsqnonlin</em></td>
+<td>非线性最小二乘</td>
+</tr>
+<tr>
+<td><em>lsqnonneg</em></td>
+<td>非负线性最小二乘</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4．实用函数</strong></p>
+<p><center>表4 实用函数表</center></p>
+<table>
+<thead>
+<tr>
+<th><strong>函   数</strong></th>
+<th><strong>描       述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>optimset</em></td>
+<td>设置参数</td>
+</tr>
+<tr>
+<td><em>optimget</em></td>
+</tr>
+</tbody>
+</table>
+<p>​    <strong>5．大型方法的演示函数</strong></p>
+<p><center>表5 大型方法的演示函数表</center></p>
+<table>
+<thead>
+<tr>
+<th><strong>函   数</strong></th>
+<th><strong>描        述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>circustent</em></td>
+<td>马戏团帐篷问题<em>—</em>二次课题</td>
+</tr>
+<tr>
+<td><em>molecule</em></td>
+<td>用无约束非线性最小化进行分子组成求解</td>
+</tr>
+<tr>
+<td><em>optdeblur</em></td>
+<td>用有边界线性最小二乘法进行图形处理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>6．中型方法的演示函数</strong></p>
+<p><center>表6 中型方法的演示函数表</center></p>
+<table>
+<thead>
+<tr>
+<th><strong>函   数</strong></th>
+<th><strong>描         述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>bandemo</em></td>
+<td>香蕉函数的最小化</td>
+</tr>
+<tr>
+<td><em>dfildemo</em></td>
+<td>过滤器设计的有限精度</td>
+</tr>
+<tr>
+<td><em>goaldemo</em></td>
+<td>目标达到举例</td>
+</tr>
+<tr>
+<td><em>optdemo</em></td>
+<td>演示过程菜单</td>
+</tr>
+<tr>
+<td><em>tutdemo</em></td>
+<td>教程演示</td>
+</tr>
+</tbody>
+</table>
+<h4 id="参数设置"><a href="#参数设置" class="headerlink" title="参数设置"></a>参数设置</h4><p>​    <em>利用optimset函数，可以创建和编辑参数结构；利用optimget函数，可以获得options优化参数。</em></p>
+<p>● <em>optimget函数</em></p>
+<p><strong>功能</strong>：获得<em>options优化参数。</em></p>
+<p><strong>语法</strong>：</p>
+<p><em>val = optimget(options,’param’)</em></p>
+<p><em>val = optimget(options,’param’,default)</em></p>
+<p><strong>描述</strong>：</p>
+<p><em>val = optimget(options,’param’) 返回优化参数options中指定的参数的值。只需要用参数开头的字母来定义参数就行了。</em></p>
+<p><em>val = optimget(options,’param’,default) 若options结构参数中没有定义指定参数，则返回缺省值。注意，这种形式的函数主要用于其它优化函数。</em></p>
+<p><strong>举例</strong>：</p>
+<p><em>1．</em>       下面的命令行将显示优化参数<em>options返回到my_options结构中：</em></p>
+<p>​        <em>val = optimget(my_options,’Display’)</em></p>
+<p><em>2．</em>       下面的命令行返回显示优化参数<em>options到my_options结构中（就象前面的例子一样），但如果显示参数没有定义，则返回值’final’:</em></p>
+<p>​       <em>optnew = optimget(my_options,’Display’,’final’);</em></p>
+<p><strong>参见</strong>：</p>
+<p><em>optimset</em></p>
+<p>● <em>optimset函数</em></p>
+<p><strong>功能</strong>：创建或编辑优化选项参数结构。</p>
+<p><strong>语法</strong>：</p>
+<p><em>options = optimset(‘param1’,value1,’param2’,value2,…)</em></p>
+<p><em>optimset</em></p>
+<p><em>options = optimset</em></p>
+<p><em>options = optimset(optimfun)</em></p>
+<p><em>options = optimset(oldopts,’param1’,value1,…)</em></p>
+<p><em>options = optimset(oldopts,newopts)</em></p>
+<p><strong>描述</strong>：</p>
+<p><em>options = optimset(‘param1’,value1,’param2’,value2,…) 创建一个称为options的优化选项参数，其中指定的参数具有指定值。所有未指定的参数都设置为空矩阵[]（将参数设置为[]表示当options传递给优化函数时给参数赋缺省值）。赋值时只要输入参数前面的字母就行了。</em></p>
+<p><em>optimset函数没有输入输出变量时，将显示一张完整的带有有效值的参数列表。</em></p>
+<p><em>options = optimset (with no input arguments) 创建一个选项结构options，其中所有的元素被设置为[]。</em></p>
+<p><em>options = optimset(optimfun) 创建一个含有所有参数名和与优化函数optimfun相关的缺省值的选项结构options。</em></p>
+<p><em>options = optimset(oldopts,’param1’,value1,…) 创建一个oldopts的拷贝，用指定的数值修改参数。</em></p>
+<p><em>options = optimset(oldopts,newopts) 将已经存在的选项结构oldopts与新的选项结构newopts进行合并。newopts参数中的所有元素将覆盖oldopts参数中的所有对应元素。</em></p>
+<p><strong>举例</strong>：</p>
+<p>​    <em>1．下面的语句创建一个称为options的优化选项结构，其中显示参数设为’iter’，TolFun参数设置为1e-8:</em></p>
+<p>​         <em>options = optimset(‘Display’,’iter’,’TolFun’,1e-8)</em></p>
+<p>​    <em>2．下面的语句创建一个称为options的优化结构的拷贝，改变TolX参数的值，将新值保存到optnew参数中:</em></p>
+<p>​           <em>optnew = optimset(options,’TolX’,1e-4);</em></p>
+<p>​    <em>3．下面的语句返回options优化结构，其中包含所有的参数名和与fminbnd函数相关的缺省值：</em></p>
+<p>​           <em>options = optimset(‘fminbnd’)</em></p>
+<p>​    <em>4．若只希望看到fminbnd函数的缺省值，只需要简单地键入下面的语句就行了：</em></p>
+<p>​           <em>optimset fminbnd</em></p>
+<p>​    <em>或者输入下面的命令，其效果与上面的相同：</em></p>
+<p>​           <em>optimset(‘fminbnd’)</em></p>
+<p><strong>参见</strong>：</p>
+<p><em>optimget</em></p>
+<h4 id="模型输入时需要注意的问题"><a href="#模型输入时需要注意的问题" class="headerlink" title="模型输入时需要注意的问题"></a>模型输入时需要注意的问题</h4><p>使用优化工具箱时，由于优化函数要求目标函数和约束条件满足一定的格式，所以需要用户在进行模型输入时注意以下几个问题：</p>
+<p><em>1.</em>目标函数最小化</p>
+<p>优化函数<em>fminbnd、fminsearch、fminunc、fmincon、fgoalattain、fminmax和lsqnonlin都要求目标函数最小化，如果优化问题要求目标函数最大化，可以通过使该目标函数的负值最小化即-f(x)最小化来实现。近似地，对于quadprog函数提供-H和-f，对于linprog函数提供-f。</em></p>
+<p><em>2.</em>约束非正</p>
+<p>优化工具箱要求非线性不等式约束的形式为<em>C<strong>i</strong>(x)≤0，通过对不等式取负可以达到使大于零的约束形式变为小于零的不等式约束形式的目的，如C<strong>i</strong>(x)≥0形式的约束等价于- C<strong>i</strong>(x)≤0；C<strong>i</strong>(x)≥b形式的约束等价于- C<strong>i</strong>(x)+b≤0。</em></p>
+<p><em>3.</em>避免使用全局变量</p>
+<h4 id="（函数句柄）函数"><a href="#（函数句柄）函数" class="headerlink" title="@（函数句柄）函数"></a>@（函数句柄）函数</h4><p>​    <em>MATLAB6.0中可以用@函数进行函数调用。@函数返回指定MATLAB函数的句柄，其调用格式为：</em></p>
+<p>​         <em>handle = @function</em></p>
+<p>利用<em>@函数进行函数调用有下面几点好处：</em></p>
+<p><em>●</em>    用句柄将一个函数传递给另一个函数；</p>
+<p><em>●</em>    减少定义函数的文件个数；</p>
+<p><em>●</em>    改进重复操作；</p>
+<p><em>●</em>    保证函数计算的可靠性。</p>
+<p>下面的例子为<em>humps函数创建一个函数句柄，并将它指定为fhandle变量。</em></p>
+<p>​    <em>fhandle = @humps;</em></p>
+<p>同样传递句柄给另一个函数，也将传递所有变量。本例将刚刚创建的函数句柄传递给<em>fminbnd函数，然后在区间[0.3,1]上进行最小化。</em></p>
+<p><em>x = fminbnd (@humps, 0.3, 1)</em></p>
+<p><em>x =</em></p>
+<p>​    <em>0.6370</em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>goodwell感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>小二，上酒~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="goodwell 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="goodwell 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    goodwell
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://goodwell42.github.io/数学建模/Matlab工具箱/Matlab常用工具箱/" title="Matlab常用工具箱">https://goodwell42.github.io/数学建模/Matlab工具箱/Matlab常用工具箱/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数学建模/" rel="tag"><i class="fa fa-tag"></i> 数学建模</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/计算机/Matlab/Matlab工具箱简介/" rel="next" title="Matlab工具箱简介">
+                <i class="fa fa-chevron-left"></i> Matlab工具箱简介
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c18c3a6695e48e0" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTY5OC8xODI0NA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="goodwell">
+            
+              <p class="site-author-name" itemprop="name">goodwell</p>
+              <p class="site-description motion-element" itemprop="description">行百里者半九十</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/goodwell42" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://goodwell42.github.io/LoveChan/" target="_blank" title="LoveChan">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>LoveChan</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/gu-de-wei-er" target="_blank" title="Zhihu">
+                      
+                        <i class="iconfont icon-zhihu"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/5960245380" target="_blank" title="Weibo">
+                      
+                        <i class="iconfont icon-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/QQcode.jpg" target="_blank" title="QQ">
+                      
+                        <i class="iconfont icon-qq"></i>QQ</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/VXcode.png" target="_blank" title="WeChat">
+                      
+                        <i class="iconfont icon-weixin"></i>WeChat</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://me.csdn.net/goodwell_42" target="_blank" title="CSDN">
+                      
+                        <i class="iconfont icon-csdn"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/731186915/main" target="_blank" title="Qzone">
+                      
+                        <i class="iconfont icon-qqkongjian"></i>Qzone</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://space.bilibili.com/32815179" target="_blank" title="Bilibili">
+                      
+                        <i class="iconfont icon-bilibilidonghua"></i>Bilibili</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://music.163.com/#/user/home?id=411200181" target="_blank" title="Netease">
+                      
+                        <i class="iconfont icon-netease"></i>Netease</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.github.io" title="Github" target="_blank">Github</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工具箱"><span class="nav-number">1.</span> <span class="nav-text">工具箱</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Curve-fitting-–-gt-曲线拟合"><span class="nav-number">1.1.</span> <span class="nav-text">Curve fitting –&gt; 曲线拟合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#曲线函数选项"><span class="nav-number">1.1.1.</span> <span class="nav-text">曲线函数选项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拟合效果评价"><span class="nav-number">1.1.2.</span> <span class="nav-text">拟合效果评价</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Optimization-–-gt-优化"><span class="nav-number">1.2.</span> <span class="nav-text">Optimization –&gt; 优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#优化工具箱中的函数"><span class="nav-number">1.2.1.</span> <span class="nav-text">优化工具箱中的函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参数设置"><span class="nav-number">1.2.2.</span> <span class="nav-text">参数设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模型输入时需要注意的问题"><span class="nav-number">1.2.3.</span> <span class="nav-text">模型输入时需要注意的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（函数句柄）函数"><span class="nav-number">1.2.4.</span> <span class="nav-text">@（函数句柄）函数</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">goodwell</span>
+
+  
+</div>
+
+<div class="footer-text">
+  今日视此虽近，邈若山河。<br>
+<span id="busuanzi_container_site_pv">
+    <i class="fa fa-area-chart"></i>本站总访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;&nbsp;&nbsp;&nbsp;|
+</span>
+<span id="busuanzi_container_site_uv">
+    &nbsp;&nbsp;&nbsp;<i class="fa fa-tag"></i>您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+</span>
+</div>
+<section class="footer-time">
+    <span class="footer__copyright">
+    <div>
+    <span id="span_dt_dt"> </span>
+    <script language="javascript">
+      function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("12/15/2018 00:56:12");//这个日期是可以修改的
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());//其实仅仅改了这里
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span_dt_dt.innerHTML="goodwell的博客已经独自照看历代星辰 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒啦";
+      }
+      show_date_time();
+    </script>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</span></section>
+<!--
+   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("zmquuMIn4FHVMvzsMvA3RG0V-gzGzoHsz", "LR8efKVYvMbL50bIn4YFl9s8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script>
+  undefined
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/click.js"></script>
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

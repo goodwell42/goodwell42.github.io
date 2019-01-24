@@ -10,9 +10,9 @@ categories:
 
 
 
-# $\LaTeX$
+# $\LaTeX$学习
 
-## 数学公式编辑
+## 数学公式编辑<!-- more -->
 
 $\LaTeX$
 
