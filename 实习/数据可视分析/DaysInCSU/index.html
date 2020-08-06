@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="google-site-verification" content="9HUf6ezOpFf73Y0w8eaFdX2rXMl4XmbEMOwRpS3fRvk">
+<meta name="baidu-site-verification" content="p1GieRH4fF">
+<script>
+    (function(){
+        if(''){
+            if (prompt('此文已设密，请输入密码') !== ''){
+                alert('密码错误！要不要问一下goodwell');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "ad95c87d"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数据可视分析,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="记录在中南大学数据可视分析小组待的那几天，感谢老师与学长们的帮助！">
+<meta name="keywords" content="数据可视分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data_visualization_in_CSU">
+<meta property="og:url" content="https://goodwell42.github.io/实习/数据可视分析/DaysInCSU/index.html">
+<meta property="og:site_name" content="GOODWELL&#39;S BLOG">
+<meta property="og:description" content="记录在中南大学数据可视分析小组待的那几天，感谢老师与学长们的帮助！">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1562911299156.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1562912473175.png">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D%5Capprox+%7B%5Cmathcal%7BG%7D%7D%5Ctimes+_%7B1%7DU%5Ctimes+_%7B2%7DV%5Ctimes+_%7B3%7DW">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D%5Capprox+%5Csum_%7Bp%3D1%7D%5E%7Br%7D%7B%5Clambda_%7Bp%7DF%5Cleft%28%3A%2Cp+%5Cright%29+%5Ccirc+S%5Cleft%28%3A%2Cp%5Cright%29%5Ccirc+T%5Cleft%28%3A%2Cp%5Cright%29%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_1%5Ctimes+n_2%5Ctimes+n_3">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BG%7D%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=r_%7B1%7D%5Ctimes+r_2%5Ctimes+r_3">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=U">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=V">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=W">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_1+%5Ctimes+r_1">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_2+%5Ctimes+r_2">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_3+%5Ctimes+r_3">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=F">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=S">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=T">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_1%5Ctimes+r">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_2%5Ctimes+r">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=n_3%5Ctimes+r">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Ccirc+">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=a%3D%5Cleft%28+1%2C2+%5Cright%29+%5E%7BT%7D+">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=b%3D%5Cleft%28+3%2C4+%5Cright%29+%5E%7BT%7D+">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=a%5Ccirc+b%3Dab%5E%7BT%7D%3D%5Cleft%5B+%5Cbegin%7Barray%7D%7Bcc%7D+3+%26+4+%5C%5C+6+%26+8+%5C%5C+%5Cend%7Barray%7D+%5Cright%5D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Cleft%28+i%2Cj%2Ck+%5Cright%29+">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x_%7Bijk%7D%5Capprox+%5Csum+_%7Bm%3D1%7D%5E%7Br_1%7D%7B%5Csum+_%7Bn%3D1%7D%5E%7Br_2%7D%7B%5Csum_%7Bl%3D1%7D%5E%7Br_3%7D%7D%7D%7B%5Cleft%28g_%7Bmnl%7D%5Ccdot+u_%7Bim%7D%5Ccdot+v_%7Bjn%7D+%5Ccdot+w_%7Bkl%7D%5Cright%29%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=x_%7Bijk%7D%5Capprox+%5Csum_%7Bp%3D1%7D%5E%7Br%7D%7B%5Clambda_%7Bp%7D%5Ccdot+f_%7Bip%7D%5Ccdot+s_%7Bjp%7D%5Ccdot+t_%7Bkp%7D%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=%5Clambda_%7Bp%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=g_%7Bmnl%7D">
+<meta property="og:image" content="https://www.zhihu.com/equation?tex=r">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-5a411a19c024276108104674a299af3a_hd.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1562912473175.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1562911299156.png">
+<meta property="og:updated_time" content="2020-08-06T07:45:42.121Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Data_visualization_in_CSU">
+<meta name="twitter:description" content="记录在中南大学数据可视分析小组待的那几天，感谢老师与学长们的帮助！">
+<meta name="twitter:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1562911299156.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://goodwell42.github.io/实习/数据可视分析/DaysInCSU/">
+
+
+
+
+
+  <title>Data_visualization_in_CSU | GOODWELL'S BLOG</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4478864dba087d91a98ca744e6f1408b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+<!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/goodwell42"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GOODWELL'S BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江岭作鸽 | 山海为信<br> 岭鸽千里终见关，<br> 海信百年遗荒滩。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://goodwell42.github.io/实习/数据可视分析/DaysInCSU/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="goodwell">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GOODWELL'S BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Data_visualization_in_CSU</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-09T10:45:43+08:00">
+                2019-07-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/实习/" itemprop="url" rel="index">
+                    <span itemprop="name">实习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/实习/数据可视分析/" itemprop="url" rel="index">
+                    <span itemprop="name">数据可视分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/实习/数据可视分析/DaysInCSU/" class="leancloud_visitors" data-flag-title="Data_visualization_in_CSU">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,232(字)
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  9(分)
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>记录在中南大学数据可视分析小组待的那几天，感谢老师与学长们的帮助！<a id="more"></a></p>
+</blockquote>
+<h1 id="DAY1"><a href="#DAY1" class="headerlink" title="DAY1"></a>DAY1</h1><p>在中南大学数据可视分析小组待的第一天(2019-07-09)</p>
+<h2 id="前后台数据交换"><a href="#前后台数据交换" class="headerlink" title="前后台数据交换"></a>前后台数据交换</h2><p>使用Ajax技术实现数据的传递，一个标准的用于在前台声明数据传递的代码格式如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> formData = <span class="keyword">new</span> FormData();<span class="comment">//声明一个存放数据的对象</span></span><br><span class="line">formData.append(<span class="string">"id"</span>,<span class="string">"requestPlus"</span>);<span class="comment">//用于前后台交互的ID</span></span><br><span class="line">formData.append(<span class="string">"csrfmiddlewaretoken"</span>, token);<span class="comment">//安全传输</span></span><br><span class="line">formData.append(<span class="string">"data"</span>,data);<span class="comment">//将数据添加到fromData对象中</span></span><br><span class="line">$.ajaxSetup(&#123;</span><br><span class="line">data: &#123;<span class="attr">csrfmiddlewaretoken</span>: <span class="string">'&#123;&#123; csrf_token &#125;&#125;'</span> &#125;,</span><br><span class="line">&#125;);</span><br><span class="line">$.ajax(</span><br><span class="line">&#123;</span><br><span class="line">    url:<span class="string">"/"</span>,</span><br><span class="line">    type:<span class="string">"POST"</span>,</span><br><span class="line">    data:formData,<span class="comment">//注意这里为之前声明的数据</span></span><br><span class="line">    processData: <span class="literal">false</span>,</span><br><span class="line">    contentType: <span class="literal">false</span>,</span><br><span class="line">    success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    jsonData = $.parseJSON(data);<span class="comment">//将后台传回来的json格式转换</span></span><br><span class="line">&#125;,</span><br><span class="line">	error:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>在上面代码中，首先声明了一个用于存放需要进行前后台数据交互的数据对象formData，然后声明一个前后台用于识别当前调用哪个方法的唯一ID，这个ID在后台中将会被识别并执行相应方法。接下来，依次使用append方法将需要传入后台的数据添加到这个对象中，如上面代码中示例的输入参数data，用双引号声明的是参数名称，可以自定义，接下来按照上面代码的格式定义ajax的传输，在success后的function里包含的data即为后台成功执行后返回到前台的json格式的数据，我们需要使用parseJSON方法进行强转。</p>
+<p>要注意的是，ajax的使用需要引用jQurey包，所以需要在html文件引用。</p>
+<p>前台的部分写完后即可以进行后台的编写，下面一段代码解释了后台如何接收前台数据，进行数据格式的转换，调用相应算法并返回到前台的过程。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> request.is_ajax() and request.POST[<span class="string">'id'</span>] == <span class="string">'requestPlus'</span>: <span class="comment">//根据ID调用对应方法</span></span><br><span class="line">    data = request.POST.get(<span class="string">"data"</span>)  <span class="comment">//根据数据的名称获取到对应的数据</span></span><br><span class="line">    data = data.encode(<span class="string">"utf-8"</span>)<span class="comment">//将获得数据转换成utf-8格式，python3中不需要</span></span><br><span class="line">    data = int(data)<span class="comment">//将获得数据转换成int格式</span></span><br><span class="line">    c = plus(a,b)<span class="comment">//调用相应的算法</span></span><br><span class="line">    result = &#123;</span><br><span class="line">        <span class="string">'c'</span> : c<span class="comment">//返回结果 </span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(json.dumps(result))<span class="comment">//将结果返回并转换成json格式</span></span><br><span class="line">    </span><br><span class="line">def plus(data):<span class="comment">//加法算法</span></span><br><span class="line">    data += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> data</span><br></pre></td></tr></table></figure>
+<p>到这里，我们完成了后台关于数据交互功能的编写.</p>
+<p>在数据可视化的项目中，用户在前端通过种种交互，设定了某种目标，前台将这一数据传递到后台，后台调用相应的算法进行计算返回，前台获得经过计算的数据之后进行绘制从而实现交互的功能。</p>
+<h3 id="疑惑"><a href="#疑惑" class="headerlink" title="疑惑"></a>疑惑</h3><p>公用的static 文件这么处理</p>
+<h1 id="DAY2"><a href="#DAY2" class="headerlink" title="DAY2"></a>DAY2</h1><p>在中南大学数据可视分析小组待的第二天(2019-07-10)</p>
+<h2 id="未解决"><a href="#未解决" class="headerlink" title="未解决"></a>未解决</h2><p>Ajax后台传回前台数据</p>
+<p>csv数据传入Django</p>
+<p>数据表如何联动</p>
+<h3 id="Django导入csv"><a href="#Django导入csv" class="headerlink" title="Django导入csv"></a>Django导入csv</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv </span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'import.csv'</span>) <span class="keyword">as</span> csvfile: </span><br><span class="line">    reader = csv.DictReader(csvfile) </span><br><span class="line">    <span class="keyword">for</span> row <span class="keyword">in</span> reader: </span><br><span class="line">     <span class="comment"># The header row values become your keys </span></span><br><span class="line">     suite_name = row[<span class="string">'SuiteName'</span>] </span><br><span class="line">     test_case = row[<span class="string">'Test Case'</span>] </span><br><span class="line">     <span class="comment"># etc.... </span></span><br><span class="line"></span><br><span class="line">     new_revo = Revo(SuiteName=suite_name, TestCase=test_case,...) </span><br><span class="line">     new_revo.save()</span><br></pre></td></tr></table></figure>
+<p>可视化：最重要的是</p>
+<h2 id="D3点击事件"><a href="#D3点击事件" class="headerlink" title="D3点击事件"></a>D3点击事件</h2><p>对一个被选择的元素，添加监听操作，代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    	</span><br><span class="line">&#125; )</span><br></pre></td></tr></table></figure>
+<p>  常用的事件（event）有：</p>
+<ul>
+<li><strong>click</strong>  ： 鼠标单击某元素时，相当于 mousedown 和 mouseup 组合在一起</li>
+<li><strong>mouseover</strong>  ： 鼠标移到某元素上</li>
+<li><strong>mouseout</strong>  ： 鼠标从某元素移开</li>
+<li><strong>mousemove</strong> ： 鼠标被移动</li>
+<li><strong>mousedown :</strong> 鼠标按钮被按下</li>
+<li><strong>mouseup :</strong> 鼠标按钮被松开</li>
+<li><strong>dblclick</strong>  ：  鼠标双击</li>
+</ul>
+<h2 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h2><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ol>
+<li>异步交互</li>
+<li>局部刷新</li>
+</ol>
+<p><a href="https://www.cnblogs.com/wj-1314/p/10539203.html" target="_blank" rel="noopener">Ajax+Django 前后端数据交互笔记</a></p>
+<p>data:JSON.stringify(data_list)</p>
+<h1 id="DAY3"><a href="#DAY3" class="headerlink" title="DAY3"></a>DAY3</h1><p>在中南大学数据可视分析小组待的第三天(2019-07-11)</p>
+<blockquote>
+<p>《精通D3.js》吕之华著</p>
+</blockquote>
+<p>可视化最重要的不在编程，技术需要就去找就行。</p>
+<h2 id="地图的数据"><a href="#地图的数据" class="headerlink" title="地图的数据"></a>地图的数据</h2><p>数据获取：<a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth主页</a></p>
+<p>从shp文件中提取需要的地理信息，并保存为JSON格式。</p>
+<p>工具：</p>
+<p>​    ogr2ogr: 可提取shp文件的地理信息，以及转换为JSON格式。命令行操作。</p>
+<p>​    ogr2gui： 基于ogr2ogr开发的图形化软件，<a href="http://www.ogr2gui.ca/en/index.php" target="_blank" rel="noopener">下载地址</a></p>
+<p>shibai</p>
+<p>由于 GeoJSON 文件中的地图数据，都是经度和纬度的信息。它们都是三维的，而要在网页上显示的是二维的，所以要设定一个投影函数来转换经度纬度。</p>
+<h2 id="投影函数"><a href="#投影函数" class="headerlink" title="投影函数"></a>投影函数</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> projection = d3.geoMercator()</span><br><span class="line">    .center([<span class="number">107</span>, <span class="number">31</span>])</span><br><span class="line">    .scale(<span class="number">850</span>)</span><br><span class="line">    .translate([width/<span class="number">2</span>, height/<span class="number">2</span>]);</span><br></pre></td></tr></table></figure>
+<p>可以参考： <a href="https://github.com/mbostock/d3/wiki/Geo-Projections" target="_blank" rel="noopener">https://github.com/mbostock/d3/wiki/Geo-Projections</a></p>
+<p>第 2 行：center() 设定地图的中心位置，[107,31] 指的是经度和纬度。</p>
+<p>第 3 行：scale() 设定放大的比例。</p>
+<p>第 4 行：translate() 设定平移。</p>
+<h2 id="地理路径生成器"><a href="#地理路径生成器" class="headerlink" title="地理路径生成器"></a>地理路径生成器</h2><p>为了根据地图的地理数据生成 SVG 中 path 元素的路径值，需要用到 d3.geo.path()，我称它为地理路径生成器。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> path = d3.geoPath()</span><br><span class="line">    .projection(projection);</span><br></pre></td></tr></table></figure>
+<p>projection() 是设定生成器的投影函数，把上面定义的投影传入即可。以后，当使用此生成器计算路径时，会自己加入投影的影响。</p>
+<h2 id="向服务器请求文件并绘制地图"><a href="#向服务器请求文件并绘制地图" class="headerlink" title="向服务器请求文件并绘制地图"></a>向服务器请求文件并绘制地图</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">d3.json(<span class="string">"china.json"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">error, root</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (error) </span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.error(error);</span><br><span class="line">    <span class="built_in">console</span>.log(root.features);</span><br><span class="line"></span><br><span class="line">    svg.selectAll(<span class="string">"path"</span>)</span><br><span class="line">        .data( root.features )</span><br><span class="line">        .enter()</span><br><span class="line">        .append(<span class="string">"path"</span>)</span><br><span class="line">        .attr(<span class="string">"stroke"</span>,<span class="string">"#000"</span>)</span><br><span class="line">        .attr(<span class="string">"stroke-width"</span>,<span class="number">1</span>)</span><br><span class="line">        .attr(<span class="string">"fill"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d,i</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> color(i);</span><br><span class="line">        &#125;)</span><br><span class="line">        .attr(<span class="string">"d"</span>, path )   <span class="comment">//使用地理路径生成器</span></span><br><span class="line">        .on(<span class="string">"mouseover"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">d,i</span>)</span>&#123;</span><br><span class="line">                    d3.select(<span class="keyword">this</span>)</span><br><span class="line">                       .attr(<span class="string">"fill"</span>,<span class="string">"yellow"</span>);</span><br><span class="line">                &#125;)</span><br><span class="line">                .on(<span class="string">"mouseout"</span>,<span class="function"><span class="keyword">function</span>(<span class="params">d,i</span>)</span>&#123;</span><br><span class="line">                    d3.select(<span class="keyword">this</span>)</span><br><span class="line">                       .attr(<span class="string">"fill"</span>,color(i));</span><br><span class="line">                &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>接下来，就是给 svg 中添加 path 元素。本例中，每一个 path 表示一个省。要注意 attr(“d”,path) 这一行代码，它相当于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.attr(<span class="string">"d"</span>,funtion(d)&#123;</span><br><span class="line">    <span class="keyword">return</span> path(d);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="文献"><a href="#文献" class="headerlink" title="文献"></a>文献</h3><p><strong>计算机视觉领域世界三大顶级会议分别为CVPR、ICCV和ECCV。</strong></p>
+<p>三大期刊三大会议《nature》《science》《cell》</p>
+<p>先去<a href="http://www.cad.zju.edu.cn/home/vagblog/" target="_blank" rel="noopener">浙大可视小组的论文集</a>里找，然后去scholar.google.cn找</p>
+<p>近3年关于“动态图”（英文：dynamic diagram 或者dynamic graph）</p>
+<p>动态图综述</p>
+<h1 id="DAY4"><a href="#DAY4" class="headerlink" title="DAY4"></a>DAY4</h1><p>在中南大学数据可视分析小组待的第四天(2019-07-12)</p>
+<h2 id="dynamic-diagram-dynamic-graph"><a href="#dynamic-diagram-dynamic-graph" class="headerlink" title="dynamic diagram / dynamic graph"></a>dynamic diagram / dynamic graph</h2><p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1562911299156.png" alt="1562911299156"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1562912473175.png" alt="1562912473175"></p>
+<h3 id="bootstrap4"><a href="#bootstrap4" class="headerlink" title="bootstrap4"></a>bootstrap4</h3> <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+
+<p><script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script></p>
+<p><script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script></p>
+<p><script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script></p>
+<h3 id="这两天相关安排："><a href="#这两天相关安排：" class="headerlink" title="这两天相关安排："></a>这两天相关安排：</h3><ol>
+<li>快速了解可视化需要的相关技术方法，不用全很熟，搞清楚框架和流程，到时候用到谁再细化学习；</li>
+<li>搜集动态图可视化和张量分解在动态图可视化中应用相关的文献；</li>
+<li>讨论动态图中运用张量分解进行可视分析的思路和存在的问题。</li>
+</ol>
+<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><p>矩阵分解有三个很明显的用途:</p>
+<ul>
+<li>降维处理</li>
+<li>缺失数据填补（或者说成“稀疏数据填补”）</li>
+<li>隐性关系挖掘，</li>
+</ul>
+<p>张量（tensor）</p>
+<table>
+<thead>
+<tr>
+<th>阶</th>
+<th>实例</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>纯量（只有方向）</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>向量（大小和方向）</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>矩阵（数据表）</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>3阶张量（数据立方）</td>
+<td></td>
+</tr>
+<tr>
+<td>n</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>rank</strong>：number of dimensions</li>
+<li><strong>shape</strong>: number of rows and columns</li>
+<li><strong>type</strong>: data type of tensor’s elements</li>
+</ol>
+<h2 id="延伸阅读：Tucker分解与CP分解的比较"><a href="#延伸阅读：Tucker分解与CP分解的比较" class="headerlink" title="延伸阅读：Tucker分解与CP分解的比较"></a><strong>延伸阅读：Tucker分解与CP分解的比较</strong></h2><p>前面，我们提到了CP分解可认为是Tucker分解的特例，那么，如何理解两者之间的异同呢？我们先写出两种分解的数学表达式。</p>
+<ul>
+<li>Tucker分解：<img src="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D%5Capprox+%7B%5Cmathcal%7BG%7D%7D%5Ctimes+_%7B1%7DU%5Ctimes+_%7B2%7DV%5Ctimes+_%7B3%7DW" alt="[公式]"></li>
+<li>CP分解：<img src="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D%5Capprox+%5Csum_%7Bp%3D1%7D%5E%7Br%7D%7B%5Clambda_%7Bp%7DF%5Cleft%28%3A%2Cp+%5Cright%29+%5Ccirc+S%5Cleft%28%3A%2Cp%5Cright%29%5Ccirc+T%5Cleft%28%3A%2Cp%5Cright%29%7D" alt="[公式]"></li>
+</ul>
+<p>其中，张量<img src="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D" alt="[公式]">的大小为<img src="https://www.zhihu.com/equation?tex=n_1%5Ctimes+n_2%5Ctimes+n_3" alt="[公式]">，在Tucker分解中，核心张量<img src="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BG%7D%7D" alt="[公式]">的大小为<img src="https://www.zhihu.com/equation?tex=r_%7B1%7D%5Ctimes+r_2%5Ctimes+r_3" alt="[公式]">，矩阵<img src="https://www.zhihu.com/equation?tex=U" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=V" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=W" alt="[公式]">的大小分别是<img src="https://www.zhihu.com/equation?tex=n_1+%5Ctimes+r_1" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=n_2+%5Ctimes+r_2" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=n_3+%5Ctimes+r_3" alt="[公式]">；在CP分解中，矩阵<img src="https://www.zhihu.com/equation?tex=F" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=S" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=T" alt="[公式]">大小分别为<img src="https://www.zhihu.com/equation?tex=n_1%5Ctimes+r" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=n_2%5Ctimes+r" alt="[公式]">、<img src="https://www.zhihu.com/equation?tex=n_3%5Ctimes+r" alt="[公式]">，运算符号“<img src="https://www.zhihu.com/equation?tex=%5Ccirc+" alt="[公式]">”表示外积（outer product），如向量<img src="https://www.zhihu.com/equation?tex=a%3D%5Cleft%28+1%2C2+%5Cright%29+%5E%7BT%7D+" alt="[公式]">，向量<img src="https://www.zhihu.com/equation?tex=b%3D%5Cleft%28+3%2C4+%5Cright%29+%5E%7BT%7D+" alt="[公式]">，则<img src="https://www.zhihu.com/equation?tex=a%5Ccirc+b%3Dab%5E%7BT%7D%3D%5Cleft%5B+%5Cbegin%7Barray%7D%7Bcc%7D+3+%26+4+%5C%5C+6+%26+8+%5C%5C+%5Cend%7Barray%7D+%5Cright%5D" alt="[公式]">。</p>
+<p>张量<img src="https://www.zhihu.com/equation?tex=%7B%5Cmathcal%7BX%7D%7D" alt="[公式]">在位置索引<img src="https://www.zhihu.com/equation?tex=%5Cleft%28+i%2Cj%2Ck+%5Cright%29+" alt="[公式]">上对应的元素为</p>
+<ul>
+<li>Tucker分解：<img src="https://www.zhihu.com/equation?tex=x_%7Bijk%7D%5Capprox+%5Csum+_%7Bm%3D1%7D%5E%7Br_1%7D%7B%5Csum+_%7Bn%3D1%7D%5E%7Br_2%7D%7B%5Csum_%7Bl%3D1%7D%5E%7Br_3%7D%7D%7D%7B%5Cleft%28g_%7Bmnl%7D%5Ccdot+u_%7Bim%7D%5Ccdot+v_%7Bjn%7D+%5Ccdot+w_%7Bkl%7D%5Cright%29%7D" alt="[公式]"></li>
+<li>CP分解：<img src="https://www.zhihu.com/equation?tex=x_%7Bijk%7D%5Capprox+%5Csum_%7Bp%3D1%7D%5E%7Br%7D%7B%5Clambda_%7Bp%7D%5Ccdot+f_%7Bip%7D%5Ccdot+s_%7Bjp%7D%5Ccdot+t_%7Bkp%7D%7D" alt="[公式]"></li>
+</ul>
+<p>从这两个数学表达式不难看出，CP分解中<img src="https://www.zhihu.com/equation?tex=%5Clambda_%7Bp%7D" alt="[公式]">构成的向量替换了Tucker分解中<img src="https://www.zhihu.com/equation?tex=g_%7Bmnl%7D" alt="[公式]">构成的核心张量（如图1所示），即CP分解是Tucker分解的特例，CP分解过程相对于Tucker分解更为简便，但CP分解中<img src="https://www.zhihu.com/equation?tex=r" alt="[公式]">的选取会遇到很多复杂的问题，如张量的秩的求解是一个NP-hard问题等，这里不做深入讨论。</p>
+<p><img src="https://pic3.zhimg.com/80/v2-5a411a19c024276108104674a299af3a_hd.png" alt="img"></p>
+<p>图1 CP分解过程（图片来源：<a href="http://xueshu.baidu.com/s?wd=paperuri%3A(b7fd924e51c6a1febd3173a1a0a9e24e" target="_blank" rel="noopener">Low-Rank Tensor Networks for Dimensionality …</a>&amp;filter=sc_long_sign&amp;tn=SE_xueshusource_2kduw22v&amp;sc_vurl=http%3A%2F%2Farxiv.org%2Fpdf%2F1609.00893&amp;ie=utf-8&amp;sc_us=5709486074605317721)）</p>
+<h3 id="今天相关安排："><a href="#今天相关安排：" class="headerlink" title="今天相关安排："></a>今天相关安排：</h3><p>1、搜集动态图可视化和张量分解在动态图可视化中应用相关的文献；<br>2、讨论动态图中运用张量分解进行可视分析的思路和存在的问题。</p>
+<h3 id="明天安排："><a href="#明天安排：" class="headerlink" title="明天安排："></a>明天安排：</h3><p>1、开始尝试设计时空数据可视化界面，先把几个视图设计好（可以参考其他的做时空数据可视化的页面布局）。 </p>
+<h1 id="DAY5"><a href="#DAY5" class="headerlink" title="DAY5"></a>DAY5</h1><p>在中南大学数据可视分析小组待的第五天(2019-07-13)</p>
+<h2 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h2><p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1562912473175.png" alt="1562912473175"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1562911299156.png" alt="1562911299156"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>goodwell感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>小二，上酒~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="goodwell 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="goodwell 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    goodwell
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://goodwell42.github.io/实习/数据可视分析/DaysInCSU/" title="Data_visualization_in_CSU">https://goodwell42.github.io/实习/数据可视分析/DaysInCSU/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据可视分析/" rel="tag"><i class="fa fa-tag"></i> 数据可视分析</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/python/Django/Django初识/" rel="next" title="Django初识">
+                <i class="fa fa-chevron-left"></i> Django初识
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/uncategorized/Java-training/" rel="prev" title="Java_training">
+                Java_training <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c18c3a6695e48e0" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTY5OC8xODI0NA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="goodwell">
+            
+              <p class="site-author-name" itemprop="name">goodwell</p>
+              <p class="site-description motion-element" itemprop="description">行百里者半九十</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/goodwell42" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://goodwell42.github.io/LoveChan/" target="_blank" title="LoveChan">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>LoveChan</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/gu-de-wei-er" target="_blank" title="Zhihu">
+                      
+                        <i class="iconfont icon-zhihu"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/5960245380" target="_blank" title="Weibo">
+                      
+                        <i class="iconfont icon-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/QQcode.jpg" target="_blank" title="QQ">
+                      
+                        <i class="iconfont icon-qq"></i>QQ</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/VXcode.png" target="_blank" title="WeChat">
+                      
+                        <i class="iconfont icon-weixin"></i>WeChat</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://me.csdn.net/goodwell_42" target="_blank" title="CSDN">
+                      
+                        <i class="iconfont icon-csdn"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/731186915/main" target="_blank" title="Qzone">
+                      
+                        <i class="iconfont icon-qqkongjian"></i>Qzone</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://space.bilibili.com/32815179" target="_blank" title="Bilibili">
+                      
+                        <i class="iconfont icon-bilibilidonghua"></i>Bilibili</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://music.163.com/#/user/home?id=411200181" target="_blank" title="Netease">
+                      
+                        <i class="iconfont icon-netease"></i>Netease</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.github.io" title="Github" target="_blank">Github</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DAY1"><span class="nav-number">1.</span> <span class="nav-text">DAY1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前后台数据交换"><span class="nav-number">1.1.</span> <span class="nav-text">前后台数据交换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#疑惑"><span class="nav-number">1.1.1.</span> <span class="nav-text">疑惑</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DAY2"><span class="nav-number">2.</span> <span class="nav-text">DAY2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#未解决"><span class="nav-number">2.1.</span> <span class="nav-text">未解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Django导入csv"><span class="nav-number">2.1.1.</span> <span class="nav-text">Django导入csv</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#D3点击事件"><span class="nav-number">2.2.</span> <span class="nav-text">D3点击事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AJAX"><span class="nav-number">2.3.</span> <span class="nav-text">AJAX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特点"><span class="nav-number">2.3.1.</span> <span class="nav-text">特点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DAY3"><span class="nav-number">3.</span> <span class="nav-text">DAY3</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#地图的数据"><span class="nav-number">3.1.</span> <span class="nav-text">地图的数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#投影函数"><span class="nav-number">3.2.</span> <span class="nav-text">投影函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#地理路径生成器"><span class="nav-number">3.3.</span> <span class="nav-text">地理路径生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向服务器请求文件并绘制地图"><span class="nav-number">3.4.</span> <span class="nav-text">向服务器请求文件并绘制地图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文献"><span class="nav-number">3.4.1.</span> <span class="nav-text">文献</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DAY4"><span class="nav-number">4.</span> <span class="nav-text">DAY4</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#dynamic-diagram-dynamic-graph"><span class="nav-number">4.1.</span> <span class="nav-text">dynamic diagram / dynamic graph</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#bootstrap4"><span class="nav-number">4.1.1.</span> <span class="nav-text">bootstrap4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#这两天相关安排："><span class="nav-number">4.1.2.</span> <span class="nav-text">这两天相关安排：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note"><span class="nav-number">4.1.3.</span> <span class="nav-text">Note</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#延伸阅读：Tucker分解与CP分解的比较"><span class="nav-number">4.2.</span> <span class="nav-text">延伸阅读：Tucker分解与CP分解的比较</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#今天相关安排："><span class="nav-number">4.2.1.</span> <span class="nav-text">今天相关安排：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#明天安排："><span class="nav-number">4.2.2.</span> <span class="nav-text">明天安排：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DAY5"><span class="nav-number">5.</span> <span class="nav-text">DAY5</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">5.1.</span> <span class="nav-text">设计</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">goodwell</span>
+
+  
+</div>
+
+<div class="footer-text">
+  今日视此虽近，邈若山河。<br>
+<span id="busuanzi_container_site_pv">
+    <i class="fa fa-area-chart"></i>本站总访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;&nbsp;&nbsp;&nbsp;|
+</span>
+<span id="busuanzi_container_site_uv">
+    &nbsp;&nbsp;&nbsp;<i class="fa fa-tag"></i>您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+</span>
+</div>
+<section class="footer-time">
+    <span class="footer__copyright">
+    <div>
+    <span id="span_dt_dt"> </span>
+    <script language="javascript">
+      function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("12/15/2018 00:56:12");//这个日期是可以修改的
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());//其实仅仅改了这里
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span_dt_dt.innerHTML="goodwell的博客已经独自照看历代星辰 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒啦";
+      }
+      show_date_time();
+    </script>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</span></section>
+<!--
+   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("zmquuMIn4FHVMvzsMvA3RG0V-gzGzoHsz", "LR8efKVYvMbL50bIn4YFl9s8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script>
+  undefined
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/click.js"></script>
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

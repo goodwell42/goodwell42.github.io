@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="google-site-verification" content="9HUf6ezOpFf73Y0w8eaFdX2rXMl4XmbEMOwRpS3fRvk">
+<meta name="baidu-site-verification" content="p1GieRH4fF">
+<script>
+    (function(){
+        if(''){
+            if (prompt('此文已设密，请输入密码') !== ''){
+                alert('密码错误！要不要问一下goodwell');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "ad95c87d"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数学建模,计算机,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Toolbox工具箱">
+<meta name="keywords" content="数学建模,计算机">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matlab工具箱简介">
+<meta property="og:url" content="https://goodwell42.github.io/计算机/Matlab/Matlab工具箱简介/index.html">
+<meta property="og:site_name" content="GOODWELL&#39;S BLOG">
+<meta property="og:description" content="Toolbox工具箱">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-08-06T07:45:42.123Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Matlab工具箱简介">
+<meta name="twitter:description" content="Toolbox工具箱">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://goodwell42.github.io/计算机/Matlab/Matlab工具箱简介/">
+
+
+
+
+
+  <title>Matlab工具箱简介 | GOODWELL'S BLOG</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4478864dba087d91a98ca744e6f1408b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+<!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/goodwell42"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GOODWELL'S BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江岭作鸽 | 山海为信<br> 岭鸽千里终见关，<br> 海信百年遗荒滩。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://goodwell42.github.io/计算机/Matlab/Matlab工具箱简介/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="goodwell">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GOODWELL'S BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Matlab工具箱简介</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-21T14:44:01+08:00">
+                2019-01-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机/Matlab/" itemprop="url" rel="index">
+                    <span itemprop="name">Matlab</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/计算机/Matlab/Matlab工具箱简介/" class="leancloud_visitors" data-flag-title="Matlab工具箱简介">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  5,561(字)
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  20(分)
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Toolbox工具箱"><a href="#Toolbox工具箱" class="headerlink" title="Toolbox工具箱"></a>Toolbox工具箱<a id="more"></a></h1><h2 id="数学、统计与优化"><a href="#数学、统计与优化" class="headerlink" title="数学、统计与优化"></a>数学、统计与优化</h2><p><strong>1     Symbolic Math Toolbox             符号数学工具箱</strong></p>
+<p>   Symbolic Math Toolbox™ 提供用于求解和推演符号运算表达式以及执行可变精度算术的函数。您可以通过分析执行微分、积分、化简、转换以及方程求解。另外，还可以利用符号运算表达式为 MATLAB®、Simulink® 和 Simscape™ 生成代码。</p>
+<p>Symbolic Math Toolbox 包含 MuPAD® 语言，并已针对符号运算表达式的处理和执行进行优化。该工具箱备有 MuPAD 函数库，其中包括普通数学领域的微积分和线性代数，以及专业领域的数论和组合论。此外，还可以使用 MuPAD 语言编写自定义的符号函数和符号库。MuPAD 记事本支持使用嵌入式文本、图形和数学排版格式来记录符号运算推导。您可以采用 HTML 或 PDF 的格式分享带注释的推导。</p>
+<p><strong>2     Partial Differential Euqation Toolbox  偏微分方程工具箱</strong></p>
+<p>偏微分方程工具箱™提供了用于在2D，3D求解偏微分方程（PDE）以及一次使用有限元分析。它可以让你指定和网格二维和三维几何形状和制定边界条件和公式。你能解决静态，时域，频域和特征值问题在几何领域。功能进行后处理和绘图效果使您能够直观地探索解决方案。</p>
+<p>你可以用偏微分方程工具箱，以解决从标准问题，如扩散，传热学，结构力学，静电，静磁学，和AC电源电磁学，以及自定义，偏微分方程的耦合系统偏微分方程。</p>
+<p><strong>3     Statistics Toolbox                 统计学工具箱</strong></p>
+<p>   Statistics and Machine Learning Toolbox 提供运用统计与<a href="http://cn.mathworks.com/solutions/machine-learning/" target="_blank" rel="noopener">机器学习</a>来描述、分析数据和对数据建模的函数和<a href="http://cn.mathworks.com/products/statistics/apps.html" target="_blank" rel="noopener">应用程序</a>。您可以使用用于探查数据分析的描述性统计和绘图，使用<a href="http://cn.mathworks.com/discovery/probability-distributions.html" target="_blank" rel="noopener">概率分布</a>拟合数据，生成用于 Monte Carlo 仿真的<a href="http://cn.mathworks.com/discovery/random-number.html" target="_blank" rel="noopener">随机数</a>，以及执行假设检验。回归和分类算法用于依据数据执行推理并构建预测模型。</p>
+<p>对于分析多维数据，Statistics and Machine Learning Toolbox 可让您通过序列<a href="http://cn.mathworks.com/discovery/feature-selection.html" target="_blank" rel="noopener">特征选择</a>、逐步回归、主成份分析、规则化和其他降维方法确定影响您的模型的主要变量或特征。该工具箱提供了<a href="http://cn.mathworks.com/discovery/supervised-learning.html" target="_blank" rel="noopener">受监督</a>和<a href="http://cn.mathworks.com/discovery/unsupervised-learning.html" target="_blank" rel="noopener">不受监督</a>机器学习算法，包括<a href="http://cn.mathworks.com/discovery/support-vector-machine.html" target="_blank" rel="noopener">支持向量机</a> (SVM)、促进式 (boosted) 和袋装 (bagged) 决策树、k-最近邻、k-均值、k-中心点、分层聚类、高斯混合模型和隐马尔可夫模型。</p>
+<p><strong>4     Curve Fitting Toolbox          曲线拟合工具箱</strong></p>
+<p>Curve Fitting Toolbox™ 提供了用于拟合曲线和曲面数据的应用程序和函数。使用该工具箱可以执行探索性数据分析，预处理和后处理数据，比较候选模型，删除偏值。您可以使用随带的线性和非线性模型库进行回归分析，也可以指定您自行定义的方程式。该库提供了优化的解算参数和起始条件，以提高拟合质量。该工具箱还提供非参数建模方法，比如样条、插值和平滑。</p>
+<p>在创建一个拟合之后，您可以运用多种后处理方法进行绘图、插值和外推，估计置信区间，计算积分和导数。</p>
+<p><strong>5     Optimization Toolbox         优化工具箱</strong></p>
+<p>​       Optimization Toolbox™ 提供了寻找最小化或最大化目标并同时满足限制条件的函数。工具箱中包括了线性规划、混合整型线性规划、二次规划、非线性优化、非线性最小二乘的求解器。您可以使用这些求解器寻找连续与离散优化问题的解决方案、执行折衷分析、以及将优化的方法结合到其算法和应用程序中。</p>
+<p><strong>6     Global Optimization Toolbox   全局优化工具箱</strong></p>
+<p>Global Optimization Toolbox 所提供的方法可为包含多个极大值或极小值的问题搜索全局解。它包含全局搜索、多初始点、模式搜索、遗传算法和模拟退火求解器。对于目标函数或约束函数连续、不连续、随机、导数不存在以及包含未确定参数的仿真模型或黑箱函数的优化问题，都可使用这些求解器来求解。</p>
+<p>遗传算法和模式搜索求解器都支持算法定制。你可以修改初始种群和适应度尺度变换选项、定义亲本选配、交叉和变异函数，创建自定义的遗传算法。还可通过定义轮询、搜索和其它函数来自定义模式搜索。</p>
+<p><strong>7     Neural Network Toolbox          神经网络工具箱</strong></p>
+<p>神经网络工具箱™提供的功能和应用服务建模是不容易建模与封闭形式方程复杂的非线性系统。神经网络工具箱支持监督学习与前馈，径向基和动态网络。它也支持无监督学习与自组织地图和有竞争力的层。有了你可以设计，培训，可视化和模拟神经网络工具箱。可以使用神经网络工具箱等应用数据拟合，模式识别，聚类，时间序列预测，和动态系统建模和控制。</p>
+<p>要加快培养和处理大型数据集，您可以在多核处理器，GPU和计算机集群使用并行计算工具箱™分发计算和数据。</p>
+<p><strong>8     Model-Based Calibration Toolbox 基于模型矫正工具箱</strong></p>
+<p>​       基于模型矫正工具箱™提供的应用程序和设计工具优化校准复杂的发动机和动力总成子系统。您可以定义最佳的测试计划，自动适应的统计模型，并生成校准和查找表的高自由度复杂的引擎，将使用传统的方法，否则需要详尽的测试。校准可以在各个工作点或以上驱动周期进行优化，以确定发动机的燃油经济性，性能和排放的最佳平衡。使用的应用程序或MATLAB®功能，可以自动校准过程相似类型的发动机。</p>
+<p>与基于模型的标定工具箱创建的模型可以导出到Simulink®的支持控制设计，硬件在环测试，和整个动力总成设计团队的动力系统模拟活动。校准表可以导出到ETAS INCA和ATI愿景。</p>
+<h2 id="信号处理与通信"><a href="#信号处理与通信" class="headerlink" title="信号处理与通信"></a>信号处理与通信</h2><p><strong>9     Signal Processing Toolbox 信号处理工具箱</strong></p>
+<p>​         Signal Processing Toolbox™ 提供了用来生成、测量、变换、过滤和可视化信号的函数和应用程序。该工具箱包括用于重新采样、平滑和同步信号、设计和分析滤波器、估算功率谱以及测量峰值、带宽和失真的算法。该工具箱还包括参数化和线性预测建模算法。您可以使用 Signal Processing Toolbox 分析和比较时域、频域和时频域中的信号，识别规律和趋势，提取特征，开发和验证自定义算法，从而洞察您的数据。</p>
+<p><strong>10  DSP System Toolbox         DSP系统工具箱</strong></p>
+<p>DSP System Toolbox 提供用于 MATLAB® 和 Simulink® 中<a href="http://cn.mathworks.com/discovery/stream-processing.html" target="_blank" rel="noopener">流信号</a>处理的算法、滤波器、设计工具和应用程序。这些功能以 MATLAB 函数、MATLAB 系统对象和 Simulink 模块的形式提供。您可以为音频、通信、医疗以及其他实时信号处理和物联网 (IoT) 应用场合创建并测试系统。</p>
+<p>使用 DSP System Toolbox 可以<a href="http://cn.mathworks.com/discovery/filter-design.html" target="_blank" rel="noopener">设计和分析 FIR</a>、IIR、多速率、多级和自适应滤波器。您可以从<a href="http://cn.mathworks.com/hardware-support/audio-dst.html" target="_blank" rel="noopener">音频设备</a>、文件和网络传输信号流来支持系统开发和验证。<a href="http://cn.mathworks.com/discovery/oscilloscope-software.html" target="_blank" rel="noopener">示波器</a>、<a href="http://cn.mathworks.com/discovery/spectrum-analyzer-software.html" target="_blank" rel="noopener">频谱分析仪</a>和<a href="http://cn.mathworks.com/discovery/logic-analyzer.html" target="_blank" rel="noopener">逻辑分析仪</a>工具可用于对流信号进行动态可视化和测量。对于桌面原型建立并部署至嵌入式处理器（包括<a href="http://cn.mathworks.com/hardware-support/arm-cortex-m-cmsis.html" target="_blank" rel="noopener">ARM® Cortex®</a>），该系统工具箱支持 C/C++ 代码生成和定点建模，还支持为 FFT 和 IFFT 等算法生成 HDL 代码。</p>
+<p><strong>11  Communications System Toolbox  通信系统工具箱</strong></p>
+<p>​    Communications System Toolbox 提供用于在 MATLAB® 与 Simulink® 中对通信系统进行分析、设计、端到端仿真和验证的算法和应用程序。工具箱算法（包括信道编码、调制、MIMO 和 OFDM）使您可以组建系统的物理层模型。您可以仿真模型以测量性能。</p>
+<p>该系统工具箱提供星座图和眼图、误码率以及其他分析工具和示波器以验证设计。这些工具可用于分析信号，实现信道特征可视化和获取误差矢量幅度 (EVM) 等性能指标。信道和 RF 损伤模型和补偿算法（包括载波和符号定时同步器）使您可以对链路级设计规范进行真实建模并补偿信道衰落效应。</p>
+<p>通过使用 Communications System Toolbox 硬件支持包，您可以将发射机和接收机模型连接到外部无线电设备并使用无线测试验证设计。该系统工具箱支持定点运算和 C 或 HDL 代码生成。</p>
+<p>算法可作为 MATLAB 函数、系统对象和 Simulink 模块。</p>
+<p><strong>12  Wavelet Toolbox                  小波工具箱</strong></p>
+<p>​         小波工具箱™提供的功能和开发基于小波变换的算法进行分析，综合，去噪和压缩的信号和图像的应用程序。</p>
+<p>该工具箱让您探索小波特性和应用，如语音和音频处理，图像与视频处理，生物医学成像和1-D以及通信和地球物理学2-D应用。</p>
+<p><strong>13  Fixed-Point Toolbox            定点运算工具箱</strong></p>
+<p>​         Fixed-Point Designer 提供了使用 MATLAB® 代码、Simulink® 模型和 Stateflow® 图开发定点算法的数据类型与工具。它会自动建议定点数据类型和字长等属性。您还可以手动指定取整模式和溢出操作等属性。您可以执行加速的比特级一致性仿真来观察有限范围与精度的影响。</p>
+<p>Fixed-Point Designer 使您能够将浮点算法转换为定点算法。您可以创建符合您的数值精度要求和目标硬件约束的定点数据类型并进行优化。您可以仿真您的设计并分析结果以获得取值范围信息。Fixed-Point Designer 使用此信息来建议适用于您的定点算法的字长和定标，并让您能够将定点结果与浮点基线进行比较。</p>
+<p>Fixed-Point Designer 支持 C、HDL 和 PLC 代码生成。</p>
+<p><strong>14  RF Toolbox               射频工具箱</strong></p>
+<p>射频工具箱™提供功能和用于设计，建模，分析和可视化射频（RF）元件的网络的应用程序。您可以使用射频工具箱软件工作在无线通信，雷达和信号完整性的项目。</p>
+<p><strong>15  Phased Array System Toolbox  相控阵系统工具箱</strong></p>
+<p>​         相控阵系统工具箱™提供的算法和应用的传感器阵列系统的设计，仿真和分析，雷达，声纳，无线通信，医学成像应用。该系统工具箱包括脉冲和连续波形和波束形成的信号处理算法，匹配滤波，到货即损（DOA）估计的方向和目标探测。它还包括发射机和接收机，传播，目标，干扰器，和杂波模型。</p>
+<p>​         该系统工具箱可以让你模拟地面，空中，或舰载多功能雷达系统的动力学与移动目标和平台。可以设计端至端的相控阵系统和分析下使用合成或获得的数据不同的情况的性能。该工具箱的应用程序，让你探索传感器阵列和波形的特点，进行链路预算分析。在副产物实施例提供了一个起点实现自定义相控阵系统。</p>
+<p>​         工具箱算法可作为MATLAB®系统对象™和Simulink®的块。</p>
+<h2 id="控制系统设计与分析"><a href="#控制系统设计与分析" class="headerlink" title="控制系统设计与分析"></a>控制系统设计与分析</h2><p><strong>16  Control system Toolbox            控制系统工具箱</strong></p>
+<p>​         Control System Toolbox™ 为系统地分析、设计和调节线性控制系统提供<a href="http://cn.mathworks.com/help/control/functionlist.html" target="_blank" rel="noopener">行业标准算法</a>和应用程序。您可以将您的系统指定为传递函数、状态空间、零极点增益 或频率响应 模型。通过应用程序和函数（如阶跃响应图和波特图），您可以实现时域和频域中系统行为的可视化效果。可以使用<a href="http://cn.mathworks.com/discovery/pid-tuning.html" target="_blank" rel="noopener">自动 PID 控制器调节、</a>波特回路整形、根轨迹方法、LQR/LQG 设计及其他交互式和自动化方法来调节补偿器参数。您可以通过校验上 升时间、超调量、稳定时间、增益和相位裕度及其他要求来验证您的设计。</p>
+<p><strong>17  System Indentification Toolbox     系统辨识工具箱</strong></p>
+<p><strong>18  Fuzzy Logic Toolbox            模糊逻辑工具箱</strong></p>
+<p><strong>19  Robust Control Toolbox            鲁棒控制工具箱</strong></p>
+<p><strong>20  Model Predictive Control Toolbox模型预测控制工具箱</strong></p>
+<p><strong>21  Aerospace Toolbox              航空航天工具箱</strong></p>
+<h2 id="图像处理与计算机视觉"><a href="#图像处理与计算机视觉" class="headerlink" title="图像处理与计算机视觉"></a>图像处理与计算机视觉</h2><p><strong>22  Image Processing Toolbox 图像处理工具箱</strong></p>
+<p>​         Image Processing Toolbox™ 提供了一套全方位的参照标准<a href="http://cn.mathworks.com/help/images/functionlist.html" target="_blank" rel="noopener">算法、函数</a>和<a href="http://cn.mathworks.com/products/image/apps.html" target="_blank" rel="noopener">应用程序</a>，用于进行图像处理、分析、可视化和算法开发。您可进行图像分析、<a href="http://cn.mathworks.com/discovery/image-segmentation.html" target="_blank" rel="noopener">图像分割</a>、<a href="http://cn.mathworks.com/discovery/image-enhancement.html" target="_blank" rel="noopener">图像增强</a>、 降噪、几何变换和图像配准。工具箱中许多函数均支持多核处理器、GPU 和 C 代码生成。</p>
+<p>Image Processing Toolbox 支持一组多样化的<a href="http://cn.mathworks.com/help/matlab/ref/imread.html#f25-713745" target="_blank" rel="noopener">图像类型</a>，包括<a href="http://cn.mathworks.com/help/images/working-with-high-dynamic-range-images.html?searchHighlight=hdr" target="_blank" rel="noopener">高动态范围</a>、千兆像素 分辨率、嵌入式 ICC 剖面图和层析成像。可视化函数和应用程序可用于探查图像与视频、检查像素区域、调节颜色与对比度、创建轮廓或柱状图以及操作<a href="http://cn.mathworks.com/help/images/specifying-a-region-of-interest-roi.html#brcwzcj-1_1" target="_blank" rel="noopener">感兴趣区域</a> (ROI)。工具箱支持用于处理、显示和<a href="http://cn.mathworks.com/help/images/exploring-very-large-images.html" target="_blank" rel="noopener">浏览大图像的</a>工作流程。</p>
+<p><strong>23  Computer Vision System Toolbox 计算机视觉工具箱</strong></p>
+<p>​         计算机视觉系统工具箱™提供的算法，功能和应用程序的设计和模拟计算机视觉和视频处理系统。您可以执行特征检测，提取和匹配;物体检测和跟踪;运动估计;和视频处理。对于3-D计算机视觉系统工具箱支持摄像机标定，立体视觉，三维重建和三维点云处理。随着基于机器学习的框架，你可以训练目标检测，物体识别和图像检索系统。算法可作为MATLAB®功能，系统对象™和Simulink®的块。</p>
+<p>​         快速原型和嵌入式系统设计，系统工具箱支持定点运算和C代码生成。</p>
+<p><strong>24  Image Acquisition Toolbox       图像采集工具箱</strong></p>
+<p>​         图像采集工具箱™技术可以采集从相机和图像采集卡的图像和视频直接进入MATLAB®和Simulink®的。可以自动检测硬件和配置硬件属性。先进的工作流程，让你触发采集，同时处理的非循环，执行后台采集，并在多个多设备同步采样。随着多个硬件厂商和行业标准的支持，可以使用成像设备，从便宜的网络摄像头，以满足低光，高速和其它具有挑战性的需求的高端的科学和工业设备。</p>
+<p><strong>25  Mapping Toolbox                 地图工具箱</strong></p>
+<p>​         地图工具箱™提供算法，功能，和用于分析的地理数据，并在MATLAB®创建地图显示的应用程序。您可以从多种文件格式和网络地图服务器导入矢量和栅格数据。该工具箱，您可以子集，并使用自定义修剪，插值，重采样数据，坐标变换和其他技术。地理空间数据可以从一个单一的地图显示多个来源的基础地图图层合并。您可以在文件格式，如shape文件，GeoTIFF文件和KML导出数据。通过将映射函数到MATLAB程序，可以自动在你的地理信息工作流程频繁的任务。</p>
+<h2 id="测试与测量"><a href="#测试与测量" class="headerlink" title="测试与测量"></a>测试与测量</h2><p><strong>26  Data Acquisition Toolbox   数据采集工具箱</strong></p>
+<p>​         数据采集工具箱™提供了用于连接MATLAB®数据采集硬件。该工具箱支持多种数据采集硬件，包括USB，PCI，PCI-EXPRESS®，PXI和PXI-Express设备，从美国国家仪器，测量计算，研华，数据转换，和其他供应商。</p>
+<p>随着工具箱，您可以配置数据采集硬件和数据读入MATLAB和Simulink®中进行实时分析。您还可以发送出的数据通过模拟和数据采集硬件提供的数字输出通道。该工具箱的数据采集软件包括用于控制模拟输入，模拟输出，计数器/定时器和DAQ设备的数字I / O子系统的功能。您可以访问特定于设备的功能和同步多个设备采集的数据。</p>
+<p>当你得到它或将它保存为后期处理，你可以分析数据。您还可以自动检测并进行迭代更新，根据分析结果测试设置。包括在工具箱中的Simulink模块让你直接传输实时数据到Simulink模型，使您能够验证和确认您的模型对现场测得的数据为您的设计验证过程的一部分。</p>
+<p><strong>27  Instrument Control Toolbox    仪表控制工具箱</strong></p>
+<p><strong>28  Image Acquisition Toolbox       图像采集工具箱</strong></p>
+<p>​         图像采集工具箱™技术可以采集从相机和图像采集卡的图像和视频直接进入MATLAB®和Simulink®的。可以自动检测硬件和配置硬件属性。先进的工作流程，让你触发采集，同时处理的非循环，执行后台采集，并在多个多设备同步采样。随着多个硬件厂商和行业标准的支持，可以使用成像设备，从便宜的网络摄像头，以满足低光，高速和其它具有挑战性的需求的高端的科学和工业设备。</p>
+<p><strong>29  OPC Toolbox                   OPC开发工具</strong></p>
+<p><strong>30  Vehicle Network Toolbox         车载网络工具箱</strong></p>
+<h2 id="计算金融"><a href="#计算金融" class="headerlink" title="计算金融"></a>计算金融</h2><p><strong>31  Financial Toolbox   金融工具箱</strong></p>
+<p><strong>32  Econometrics Toolbox 计算经济学工具箱</strong></p>
+<p><strong>33  Datafeed Toolbox  数据输入工具箱</strong></p>
+<p><strong>34  Fixed-Income Toolbox 固定收益工具箱</strong></p>
+<p><strong>35  Financial Derivatives Toolbox  衍生金融工具箱</strong></p>
+<h2 id="计算生物"><a href="#计算生物" class="headerlink" title="计算生物"></a>计算生物</h2><p><strong>33  Bioinformatics Toolbox      生物信息工具箱</strong></p>
+<p><strong>34  SimBiology 生物学工具箱</strong></p>
+<h2 id="并行计算"><a href="#并行计算" class="headerlink" title="并行计算"></a>并行计算</h2><p><strong>35  Parallel Computing Toolbox     并行计算工具箱</strong></p>
+<p><strong>36  MATLAB Distributed Computing Server    MATLAB分布式计算服务器</strong></p>
+<h2 id="数据库访问与报告"><a href="#数据库访问与报告" class="headerlink" title="数据库访问与报告"></a>数据库访问与报告</h2><p><strong>37  Database Toolbox  数据库工具箱</strong></p>
+<p>​         数据库工具箱™提供了一个应用程序和功能的交换关系数据库和MATLAB®之间的数据。您可以使用SQL命令来读取和写入数据，或使用数据库资源管理器应用程序与数据库进行交互，而无需使用SQL。</p>
+<p>该工具箱支持ODBC兼容和JDBC兼容数据库，包括的Oracle®，SAS®，MySQL®，访问Sybase®，Microsoft®SQLServer®上，微软Access®的，和PostgreSQL®。您可以应用简单和高级的条件，从MATLAB数据库查询。该工具箱允许您访问在一个单一的MATLAB进程同时进行多个数据库，能够实现大型数据集分段导入。</p>
+<p><strong>38  MATLAB Report Generator     MATLAB报告生成</strong></p>
+<h2 id="MATLAB代码生成"><a href="#MATLAB代码生成" class="headerlink" title="MATLAB代码生成"></a>MATLAB代码生成</h2><p><strong>39  MATLAB Coder       MATLAB代码生成</strong></p>
+<p>​         MATLAB Coder™ 可从 MATLAB® 代码生成可读且可移植的 C 和 C++ 代码。它支持大多数 MATLAB 语言和广泛的工具箱。您可以将生成的代码作为源代码、静态库或动态库集成到您的项目。还可以在 MATLAB 环境中使用生成的代码，加快 MATLAB 代码的计算量密集部分的速度。使用 MATLAB Coder，您可以将现有 C 代码合并到 MATLAB 算法和生成的代码中。</p>
+<p>通过联合使用 MATLAB Coder 和 Embedded Coder®，您可以进一步优化代码的效率和自定义生成的代码。然后可以使用软件在环 (SIL) 和处理器在环 (PIL) 执行程序验证生成代码的数字行为。</p>
+<p><strong>40  Filter Design HDL Coder     滤波器设计HDL代码生成</strong></p>
+<p>​         滤波器设计HDL编码器™产品增加了硬件实现能力MATLAB®。它可以让你产生有效的，综合的，而便携VHDL和Verilog代码，其设计与DSP系统工具箱™软件，用于ASIC或FPGA实现定点滤波器。它还可以自动快速仿真，测试和验证所生成的代码创建VHDL和Verilog测试平台。</p>
+<h2 id="MATLAB应用发布"><a href="#MATLAB应用发布" class="headerlink" title="MATLAB应用发布"></a>MATLAB应用发布</h2><p><strong>41  MATLAB Compiler  MATLAB编译器　混合编程</strong></p>
+<p><strong>42  MATLAB Builder NE     for Microsoft.Net Framework</strong></p>
+<p><strong>43  MATLAB Builder JA       for Java Language</strong></p>
+<p><strong>44  MATLAB Builder EX      for Microsoft Excel</strong></p>
+<p><strong>45  Spreadsheet Link EX    for Microsoft Excel</strong></p>
+<h1 id="Simulink模块"><a href="#Simulink模块" class="headerlink" title="Simulink模块"></a>Simulink模块</h1><h2 id="信号处理与通信-1"><a href="#信号处理与通信-1" class="headerlink" title="信号处理与通信"></a>信号处理与通信</h2><p>1       DSP System Toolbox                 DSP系统工具箱</p>
+<p>2       Communications System Toolbox   通信系统工具箱</p>
+<p>3       Computer Vision System Toolbox  计算机视觉工具箱</p>
+<p>4       SimRF       RF 模块集功能</p>
+<h2 id="控制系统设计与分析-1"><a href="#控制系统设计与分析-1" class="headerlink" title="控制系统设计与分析"></a>控制系统设计与分析</h2><p>5       Simulink Control Design  Simulink 控制器设计</p>
+<p>6       Simulink Design Optimization        Simulink 设计优化</p>
+<p>7       Aerospace Blockset                 航空航天模块</p>
+<h2 id="物理建模"><a href="#物理建模" class="headerlink" title="物理建模"></a>物理建模</h2><p>8       Simscape 物理模型仿真模块组</p>
+<p>9       SimMechanics 机构动态仿真模块组</p>
+<p>10    SimDriveline    传动系统系统仿真模块组</p>
+<p>11    SimHydraulics 液压仿真模块组</p>
+<p>12    SimRF               RF仿真模块组</p>
+<p>13    SimElectronics 电子仿真模块组</p>
+<p>14    SimPowerSystems  动力系统仿真模块组</p>
+<h2 id="基于事件的建模"><a href="#基于事件的建模" class="headerlink" title="基于事件的建模"></a>基于事件的建模</h2><p>15    Stateflow </p>
+<p>16    SimEvents</p>
+<p>​         </p>
+<h2 id="快速原型和硬件再回路仿真"><a href="#快速原型和硬件再回路仿真" class="headerlink" title="快速原型和硬件再回路仿真"></a>快速原型和硬件再回路仿真</h2><p>17    xPC Target        </p>
+<p>18    xPC Target Embedded Option </p>
+<p>19    Real-Time Windows Target</p>
+<p>​         </p>
+<h2 id="仿真绘图与报告"><a href="#仿真绘图与报告" class="headerlink" title="仿真绘图与报告"></a>仿真绘图与报告</h2><p>20    Simulink 3D Animation    </p>
+<p>21    Gauges Blockset      </p>
+<p>22    Simulink Report Generator</p>
+<p>​         </p>
+<h2 id="验证、确认和测试"><a href="#验证、确认和测试" class="headerlink" title="验证、确认和测试"></a>验证、确认和测试</h2><p>23    Simulink Verfication and Validation        </p>
+<p>24    Simulink Design Verifier  </p>
+<p>25    System Test     </p>
+<p>26    EDA Simulator Link </p>
+<p>27    Simulink Code Inspector </p>
+<h2 id="定点建模"><a href="#定点建模" class="headerlink" title="定点建模"></a>定点建模</h2><p>28    Simulink Fixed Point</p>
+<p>​         </p>
+<h2 id="代码生成"><a href="#代码生成" class="headerlink" title="代码生成"></a>代码生成</h2><p>29    Simulink Coder        </p>
+<p>30    Embedded Coder    </p>
+<p>31    Simulink HDL Coder </p>
+<p>32    Simulink PLC Coder </p>
+<p>33    Do Qualification Kit for DO-178</p>
+<p>34    IEC Certification Kit for ISO 26262 and IEC 61508</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>goodwell感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>小二，上酒~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="goodwell 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="goodwell 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    goodwell
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://goodwell42.github.io/计算机/Matlab/Matlab工具箱简介/" title="Matlab工具箱简介">https://goodwell42.github.io/计算机/Matlab/Matlab工具箱简介/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数学建模-计算机/" rel="tag"><i class="fa fa-tag"></i> 数学建模,计算机</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/计算机/快捷键/键盘快捷键2/" rel="next" title="键盘快捷键2">
+                <i class="fa fa-chevron-left"></i> 键盘快捷键2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/数学建模/Matlab工具箱/Matlab常用工具箱/" rel="prev" title="Matlab常用工具箱">
+                Matlab常用工具箱 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c18c3a6695e48e0" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTY5OC8xODI0NA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="goodwell">
+            
+              <p class="site-author-name" itemprop="name">goodwell</p>
+              <p class="site-description motion-element" itemprop="description">行百里者半九十</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/goodwell42" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://goodwell42.github.io/LoveChan/" target="_blank" title="LoveChan">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>LoveChan</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/gu-de-wei-er" target="_blank" title="Zhihu">
+                      
+                        <i class="iconfont icon-zhihu"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/5960245380" target="_blank" title="Weibo">
+                      
+                        <i class="iconfont icon-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/QQcode.jpg" target="_blank" title="QQ">
+                      
+                        <i class="iconfont icon-qq"></i>QQ</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/VXcode.png" target="_blank" title="WeChat">
+                      
+                        <i class="iconfont icon-weixin"></i>WeChat</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://me.csdn.net/goodwell_42" target="_blank" title="CSDN">
+                      
+                        <i class="iconfont icon-csdn"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/731186915/main" target="_blank" title="Qzone">
+                      
+                        <i class="iconfont icon-qqkongjian"></i>Qzone</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://space.bilibili.com/32815179" target="_blank" title="Bilibili">
+                      
+                        <i class="iconfont icon-bilibilidonghua"></i>Bilibili</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://music.163.com/#/user/home?id=411200181" target="_blank" title="Netease">
+                      
+                        <i class="iconfont icon-netease"></i>Netease</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.github.io" title="Github" target="_blank">Github</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Toolbox工具箱"><span class="nav-number">1.</span> <span class="nav-text">Toolbox工具箱</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数学、统计与优化"><span class="nav-number">1.1.</span> <span class="nav-text">数学、统计与优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信号处理与通信"><span class="nav-number">1.2.</span> <span class="nav-text">信号处理与通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#控制系统设计与分析"><span class="nav-number">1.3.</span> <span class="nav-text">控制系统设计与分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像处理与计算机视觉"><span class="nav-number">1.4.</span> <span class="nav-text">图像处理与计算机视觉</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试与测量"><span class="nav-number">1.5.</span> <span class="nav-text">测试与测量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算金融"><span class="nav-number">1.6.</span> <span class="nav-text">计算金融</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算生物"><span class="nav-number">1.7.</span> <span class="nav-text">计算生物</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#并行计算"><span class="nav-number">1.8.</span> <span class="nav-text">并行计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库访问与报告"><span class="nav-number">1.9.</span> <span class="nav-text">数据库访问与报告</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MATLAB代码生成"><span class="nav-number">1.10.</span> <span class="nav-text">MATLAB代码生成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MATLAB应用发布"><span class="nav-number">1.11.</span> <span class="nav-text">MATLAB应用发布</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Simulink模块"><span class="nav-number">2.</span> <span class="nav-text">Simulink模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#信号处理与通信-1"><span class="nav-number">2.1.</span> <span class="nav-text">信号处理与通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#控制系统设计与分析-1"><span class="nav-number">2.2.</span> <span class="nav-text">控制系统设计与分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物理建模"><span class="nav-number">2.3.</span> <span class="nav-text">物理建模</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于事件的建模"><span class="nav-number">2.4.</span> <span class="nav-text">基于事件的建模</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速原型和硬件再回路仿真"><span class="nav-number">2.5.</span> <span class="nav-text">快速原型和硬件再回路仿真</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#仿真绘图与报告"><span class="nav-number">2.6.</span> <span class="nav-text">仿真绘图与报告</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#验证、确认和测试"><span class="nav-number">2.7.</span> <span class="nav-text">验证、确认和测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定点建模"><span class="nav-number">2.8.</span> <span class="nav-text">定点建模</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码生成"><span class="nav-number">2.9.</span> <span class="nav-text">代码生成</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">goodwell</span>
+
+  
+</div>
+
+<div class="footer-text">
+  今日视此虽近，邈若山河。<br>
+<span id="busuanzi_container_site_pv">
+    <i class="fa fa-area-chart"></i>本站总访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;&nbsp;&nbsp;&nbsp;|
+</span>
+<span id="busuanzi_container_site_uv">
+    &nbsp;&nbsp;&nbsp;<i class="fa fa-tag"></i>您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+</span>
+</div>
+<section class="footer-time">
+    <span class="footer__copyright">
+    <div>
+    <span id="span_dt_dt"> </span>
+    <script language="javascript">
+      function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("12/15/2018 00:56:12");//这个日期是可以修改的
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());//其实仅仅改了这里
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span_dt_dt.innerHTML="goodwell的博客已经独自照看历代星辰 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒啦";
+      }
+      show_date_time();
+    </script>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</span></section>
+<!--
+   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("zmquuMIn4FHVMvzsMvA3RG0V-gzGzoHsz", "LR8efKVYvMbL50bIn4YFl9s8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script>
+  undefined
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/click.js"></script>
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
