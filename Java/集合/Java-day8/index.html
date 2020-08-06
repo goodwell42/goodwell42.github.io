@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="google-site-verification" content="9HUf6ezOpFf73Y0w8eaFdX2rXMl4XmbEMOwRpS3fRvk">
+<meta name="baidu-site-verification" content="p1GieRH4fF">
+<script>
+    (function(){
+        if(''){
+            if (prompt('此文已设密，请输入密码') !== ''){
+                alert('密码错误！要不要问一下goodwell');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "ad95c87d"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Java,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="自用Java笔记（Ⅷ），主要记录Java集合！奋斗ing">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java_day8">
+<meta property="og:url" content="https://goodwell42.github.io/Java/集合/Java-day8/index.html">
+<meta property="og:site_name" content="GOODWELL&#39;S BLOG">
+<meta property="og:description" content="自用Java笔记（Ⅷ），主要记录Java集合！奋斗ing">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1571913060661.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503412344.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503469429.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503494900.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503705248.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503758180.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503855013.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503886412.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503911762.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503931523.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572503952571.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572511884021.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572511900541.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572511917374.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572512273159.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572512400210.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572512867042.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572512954082.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572529716384.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572530103932.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572530405955.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572530971664.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572531188746.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534505340.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534562473.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534636871.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534731950.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534767934.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534855255.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534899402.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572534942071.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572535007627.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572535088172.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572535096718.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572586657644.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572587028171.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572587553164.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572588058108.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572588085433.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572589098679.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572589169742.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572589213748.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591351893.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591432911.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591768166.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591837122.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591864203.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591952733.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591969872.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572591994812.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572592016723.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572592160258.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572592183064.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572594697015.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572594828381.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572595139438.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572595145355.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572595182280.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572595210220.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572595228892.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572595279075.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572595300735.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572597230407.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572597193080.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572603557083.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572603582172.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572603606756.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572603715512.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572604784062.png">
+<meta property="og:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1572604831090.png">
+<meta property="og:updated_time" content="2019-11-09T20:43:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java_day8">
+<meta name="twitter:description" content="自用Java笔记（Ⅷ），主要记录Java集合！奋斗ing">
+<meta name="twitter:image" content="c:/Users/goodwell/AppData/Roaming/Typora/typora-user-images/1571913060661.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://goodwell42.github.io/Java/集合/Java-day8/">
+
+
+
+
+
+  <title>Java_day8 | GOODWELL'S BLOG</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4478864dba087d91a98ca744e6f1408b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+<!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/goodwell42"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GOODWELL'S BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江岭作鸽 | 山海为信<br> 岭鸽千里终见关，<br> 海信百年遗荒滩。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            日程表
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://goodwell42.github.io/Java/集合/Java-day8/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="goodwell">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GOODWELL'S BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Java_day8</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-04T14:01:56+08:00">
+                2019-10-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/集合/" itemprop="url" rel="index">
+                    <span itemprop="name">集合</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/Java/集合/Java-day8/" class="leancloud_visitors" data-flag-title="Java_day8">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,183(字)
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6(分)
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>自用Java笔记（Ⅷ），主要记录Java集合！奋斗ing<a id="more"></a></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1571913060661.png" alt="1571913060661"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一、集合框架的概述* 1. 集合、数组都是对多个数据进行存储操作的结构，简称Java容器。*   说明：此时的存储，主要指的是内存层面的存储，不涉及持久化的存储（.txt,.jpg,.avi,数据库中）*</span><br></pre></td></tr></table></figure>
+<p>Java集合可以分为Collection和Map两种体系</p>
+<ul>
+<li>Collection接口：单列数据，定义了存取一些对象的方法的集合<ul>
+<li>List：元素有序、可重复的集合</li>
+<li>Set：元素无序、不可重复的集合</li>
+</ul>
+</li>
+<li>Map接口：双列数据，保存具有映射关系”key-value对”的集合</li>
+</ul>
+<h3 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">|----Collection接口：单列集合，用来存储一个一个的对象</span><br><span class="line">	|----List接口：存储有序的、可重复的数据 --&gt; “动态”数组</span><br><span class="line">		|----ArrayList、LinkedList、Vector</span><br><span class="line">	</span><br><span class="line">	|----Set接口：存储无序的、不可重复的数据 --&gt; 数学中的“集合”</span><br><span class="line">		|----HashSet、LinkedHashSet、TreeSet</span><br><span class="line">	</span><br><span class="line">|----Map接口：双列接口，用来存储一对(key-value)数据 --&gt; y = f(x)</span><br><span class="line">		|----HashMap、LinkedHashMap、TreeMap、Hashtable、Properties</span><br></pre></td></tr></table></figure>
+<p>Collection常用方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">        Collection coll = <span class="keyword">new</span> ArrayList();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//add(Object e): 将元素e添加到集合coll中、</span></span><br><span class="line">        coll.add(<span class="string">"AA"</span>);</span><br><span class="line">        coll.add(<span class="string">"BB"</span>);</span><br><span class="line">        coll.add(<span class="number">123</span>); <span class="comment">//自动装箱</span></span><br><span class="line">        coll.add(<span class="keyword">new</span> Date());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//size(): 获取添加的元素的个数</span></span><br><span class="line">        System.out.println(coll.size());<span class="comment">//4</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//addAll(Collection coll1): 将coll1集合中的元素添加到当前的集合中</span></span><br><span class="line">        Collection coll1 = <span class="keyword">new</span> ArrayList();</span><br><span class="line">        coll1.add(<span class="number">456</span>);</span><br><span class="line">        coll1.add(<span class="string">"cc"</span>);</span><br><span class="line">        coll.addAll(coll1);</span><br><span class="line"></span><br><span class="line">        System.out.println(coll.size());<span class="comment">//6</span></span><br><span class="line">        System.out.println(coll);<span class="comment">//[AA, BB, 123, Thu Oct 31 12:03:02 CST 2019, 456, cc]</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//clear(): 清空集合元素</span></span><br><span class="line">        coll.clear();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//isEmpty(): 判断当前集合是否为空</span></span><br><span class="line">        System.out.println(coll.isEmpty());<span class="comment">//true</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>contains(Object obj): 判断当前集合中是否包含obj</li>
+</ol>
+<p>PS:向Collection接口的实现类的对象中添加数据obj时，要求obj所在类要重写equals()。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test2</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Collection coll = <span class="keyword">new</span> ArrayList();</span><br><span class="line">    coll.add(<span class="number">123</span>);</span><br><span class="line">    coll.add(<span class="number">456</span>);</span><br><span class="line">    Person p = <span class="keyword">new</span> Person(<span class="string">"Jerry1"</span>, <span class="number">20</span>);</span><br><span class="line">    coll.add(p);</span><br><span class="line">    coll.add(<span class="keyword">new</span> Person(<span class="string">"Jerry"</span>, <span class="number">20</span>));</span><br><span class="line">    coll.add(<span class="keyword">new</span> String(<span class="string">"Tom"</span>));</span><br><span class="line">    coll.add(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//1.contains(Object obj): 判断当前集合中是否包含obj</span></span><br><span class="line">    <span class="comment">//我们在判断时会调用obj对象所在类的equals()</span></span><br><span class="line">    <span class="keyword">boolean</span> contains = coll.contains(<span class="number">123</span>);</span><br><span class="line">    System.out.println(contains);<span class="comment">//true</span></span><br><span class="line">    System.out.println(coll.contains(<span class="keyword">new</span> String(<span class="string">"Tom"</span>)));<span class="comment">//true</span></span><br><span class="line"></span><br><span class="line">    System.out.println(coll.contains(<span class="keyword">new</span> Person(<span class="string">"Jerry"</span>, <span class="number">20</span>)));<span class="comment">//false</span></span><br><span class="line">    System.out.println(coll.contains(p));<span class="comment">//true</span></span><br><span class="line">    <span class="comment">//PS:向Collection接口的实现类的对象中添加数据obj时，要求obj所在类要重写equals()。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>containsAll(Collection coll1): 判断形参coll1中的所有元素都存在于当前集合中。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//2.containsAll(Collection coll1): 判断形参coll1中的所有元素都存在于当前集合中。</span></span><br><span class="line">Collection coll1 = Arrays.asList(<span class="number">123</span>,<span class="number">4567</span>);</span><br><span class="line">System.out.println(coll.containsAll(coll1));<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>remove(Object obj): 从当前集合中移除obj元素</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test3</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Collection coll = <span class="keyword">new</span> ArrayList();</span><br><span class="line">    coll.add(<span class="number">123</span>);</span><br><span class="line">    coll.add(<span class="number">456</span>);</span><br><span class="line">    coll.add(<span class="keyword">new</span> Person(<span class="string">"Jerry"</span>, <span class="number">20</span>));</span><br><span class="line">    coll.add(<span class="keyword">new</span> String(<span class="string">"Tom"</span>));</span><br><span class="line">    coll.add(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//3.remove(Object obj): 从当前集合中移除obj元素</span></span><br><span class="line">    coll.remove(<span class="number">123</span>);</span><br><span class="line">    System.out.println(coll);</span><br><span class="line">    <span class="comment">//[456, com.good.java.Person@4ee285c6, Tom, false]</span></span><br><span class="line">    coll.remove(<span class="keyword">new</span> Person(<span class="string">"Jerry"</span>, <span class="number">20</span>));</span><br><span class="line">    System.out.println(coll);</span><br><span class="line">    <span class="comment">//[456, com.good.java.Person@4ee285c6, Tom, false]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>removeAll(Collection coll1): 差集，从当前集合中移除coll1中所有的元素</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//4.removeAll(Collection coll1): 差集，从当前集合中移除coll1中所有的元素</span></span><br><span class="line">Collection coll1 = Arrays.asList(<span class="number">123</span>,<span class="number">456</span>);</span><br><span class="line">coll.removeAll(coll1);</span><br><span class="line">System.out.println(coll);</span><br><span class="line"><span class="comment">//[com.good.java.Person@4ee285c6, Tom, false]</span></span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>retainAll(Collection coll1): 交集，获取当前集合和coll1集合的交集</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test4</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Collection coll = <span class="keyword">new</span> ArrayList();</span><br><span class="line">    coll.add(<span class="number">123</span>);</span><br><span class="line">    coll.add(<span class="number">456</span>);</span><br><span class="line">    coll.add(<span class="keyword">new</span> Person(<span class="string">"Jerry"</span>, <span class="number">20</span>));</span><br><span class="line">    coll.add(<span class="keyword">new</span> String(<span class="string">"Tom"</span>));</span><br><span class="line">    coll.add(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//5.retainAll(Collection coll1): 交集，获取当前集合和coll1集合的交集</span></span><br><span class="line">    Collection coll1 = Arrays.asList(<span class="number">123</span>,<span class="number">456</span>,<span class="number">789</span>);</span><br><span class="line">    coll.retainAll(coll1);</span><br><span class="line">    System.out.println(coll);</span><br><span class="line">    <span class="comment">//[123, 456]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>equals(Object obj)</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    Collection coll1 = <span class="keyword">new</span> ArrayList();</span><br><span class="line">    coll1.add(<span class="number">123</span>);</span><br><span class="line">    coll1.add(<span class="number">456</span>);</span><br><span class="line"><span class="comment">//        coll1.add(new Person("Jerry", 20));</span></span><br><span class="line">    coll1.add(<span class="keyword">new</span> String(<span class="string">"Tom"</span>));</span><br><span class="line">    coll1.add(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//6.equals(Object obj)</span></span><br><span class="line">    System.out.println(coll.equals(coll1));</span><br></pre></td></tr></table></figure>
+<ol start="7">
+<li>hashCode(): 返回当前对象的哈希值</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Collection coll = <span class="keyword">new</span> ArrayList();</span><br><span class="line">coll.add(<span class="number">123</span>);</span><br><span class="line">coll.add(<span class="number">456</span>);</span><br><span class="line">    coll.add(<span class="keyword">new</span> Person(<span class="string">"Jerry"</span>, <span class="number">20</span>));</span><br><span class="line">coll.add(<span class="keyword">new</span> String(<span class="string">"Tom"</span>));</span><br><span class="line">coll.add(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//7.hashCode(): 返回当前对象的哈希值</span></span><br><span class="line">System.out.println(coll.hashCode());<span class="comment">//701070075</span></span><br></pre></td></tr></table></figure>
+<ol start="8">
+<li>集合 —&gt; 数组：toArray()</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Object[] arr = coll.toArray();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    System.out.println(arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//拓展：数组 ---&gt; 集合： 调用Arrays类的静态方法asList()</span></span><br><span class="line">List&lt;String&gt; list = Arrays.asList(<span class="keyword">new</span> String[]&#123;<span class="string">"aa"</span>,<span class="string">"bb"</span>,<span class="string">"cc"</span>&#125;);</span><br><span class="line">System.out.println(list);<span class="comment">//[aa, bb, cc]</span></span><br><span class="line"></span><br><span class="line">List arr1 = Arrays.asList(<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">123</span>,<span class="number">456</span>&#125;);</span><br><span class="line">System.out.println(arr1.size());<span class="comment">//1</span></span><br><span class="line"></span><br><span class="line">List arr2 = Arrays.asList(<span class="keyword">new</span> Integer[]&#123;<span class="number">123</span>,<span class="number">456</span>&#125;);</span><br><span class="line">System.out.println(arr2.size());<span class="comment">//2</span></span><br></pre></td></tr></table></figure>
+<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503412344.png" alt="1572503412344"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503469429.png" alt="1572503469429"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503494900.png" alt="1572503494900"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503705248.png" alt="1572503705248"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503758180.png" alt="1572503758180"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503855013.png" alt="1572503855013"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503886412.png" alt="1572503886412"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503911762.png" alt="1572503911762"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503931523.png" alt="1572503931523"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572503952571.png" alt="1572503952571"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572511884021.png" alt="1572511884021"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572511900541.png" alt="1572511900541"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572511917374.png" alt="1572511917374"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572512273159.png" alt="1572512273159"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572512400210.png" alt="1572512400210"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572512867042.png" alt="1572512867042"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572512954082.png" alt="1572512954082"></p>
+<h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572529716384.png" alt="1572529716384"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572530103932.png" alt="1572530103932"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572530405955.png" alt="1572530405955"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572530971664.png" alt="1572530971664"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572531188746.png" alt="1572531188746"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534505340.png" alt="1572534505340"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534562473.png" alt="1572534562473"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534636871.png" alt="1572534636871"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534731950.png" alt="1572534731950"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534767934.png" alt="1572534767934"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534855255.png" alt="1572534855255"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534899402.png" alt="1572534899402"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572534942071.png" alt="1572534942071"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572535007627.png" alt="1572535007627"></p>
+<p> <img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572535088172.png" alt="1572535088172"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572535096718.png" alt="1572535096718"></p>
+<h2 id="Set接口"><a href="#Set接口" class="headerlink" title="Set接口"></a>Set接口</h2><p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572586657644.png" alt="1572586657644"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572587028171.png" alt="1572587028171"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572587553164.png" alt="1572587553164"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572588058108.png" alt="1572588058108"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572588085433.png" alt="1572588085433"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572589098679.png" alt="1572589098679"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572589169742.png" alt="1572589169742"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572589213748.png" alt="1572589213748"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591351893.png" alt="1572591351893"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591432911.png" alt="1572591432911"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591768166.png" alt="1572591768166"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591837122.png" alt="1572591837122"><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591864203.png" alt="1572591864203"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591952733.png" alt="1572591952733"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591969872.png" alt="1572591969872"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572591994812.png" alt="1572591994812"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572592016723.png" alt="1572592016723"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572592160258.png" alt="1572592160258"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572592183064.png" alt="1572592183064"></p>
+<h2 id="Map接口"><a href="#Map接口" class="headerlink" title="Map接口"></a>Map接口</h2><p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572594697015.png" alt="1572594697015"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572594828381.png" alt="1572594828381"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572595139438.png" alt="1572595139438"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572595145355.png" alt="1572595145355"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572595182280.png" alt="1572595182280"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572595210220.png" alt="1572595210220"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572595228892.png" alt="1572595228892"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572595279075.png" alt="1572595279075"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572595300735.png" alt="1572595300735"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572597230407.png" alt="1572597230407"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572597193080.png" alt="1572597193080"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572603557083.png" alt="1572603557083"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572603582172.png" alt="1572603582172"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572603606756.png" alt="1572603606756"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572603715512.png" alt="1572603715512"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572604784062.png" alt="1572604784062"></p>
+<p><img src="C:\Users\goodwell\AppData\Roaming\Typora\typora-user-images\1572604831090.png" alt="1572604831090"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>goodwell感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>小二，上酒~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="goodwell 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="goodwell 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    goodwell
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://goodwell42.github.io/Java/集合/Java-day8/" title="Java_day8">https://goodwell42.github.io/Java/集合/Java-day8/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Java/枚举类/Java-day7/" rel="next" title="Java_day7">
+                <i class="fa fa-chevron-left"></i> Java_day7
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/回收站/test2/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c18c3a6695e48e0" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MTY5OC8xODI0NA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="goodwell">
+            
+              <p class="site-author-name" itemprop="name">goodwell</p>
+              <p class="site-description motion-element" itemprop="description">行百里者半九十</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/goodwell42" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://goodwell42.github.io/LoveChan/" target="_blank" title="LoveChan">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>LoveChan</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/gu-de-wei-er" target="_blank" title="Zhihu">
+                      
+                        <i class="iconfont icon-zhihu"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/5960245380" target="_blank" title="Weibo">
+                      
+                        <i class="iconfont icon-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/QQcode.jpg" target="_blank" title="QQ">
+                      
+                        <i class="iconfont icon-qq"></i>QQ</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://pjvbe4vjy.bkt.clouddn.com/blog/img/VXcode.png" target="_blank" title="WeChat">
+                      
+                        <i class="iconfont icon-weixin"></i>WeChat</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://me.csdn.net/goodwell_42" target="_blank" title="CSDN">
+                      
+                        <i class="iconfont icon-csdn"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/731186915/main" target="_blank" title="Qzone">
+                      
+                        <i class="iconfont icon-qqkongjian"></i>Qzone</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://space.bilibili.com/32815179" target="_blank" title="Bilibili">
+                      
+                        <i class="iconfont icon-bilibilidonghua"></i>Bilibili</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://music.163.com/#/user/home?id=411200181" target="_blank" title="Netease">
+                      
+                        <i class="iconfont icon-netease"></i>Netease</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.github.io" title="Github" target="_blank">Github</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#集合框架"><span class="nav-number">1.</span> <span class="nav-text">集合框架</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器"><span class="nav-number"></span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#List"><span class="nav-number"></span> <span class="nav-text">List</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Set接口"><span class="nav-number"></span> <span class="nav-text">Set接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Map接口"><span class="nav-number"></span> <span class="nav-text">Map接口</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">goodwell</span>
+
+  
+</div>
+
+<div class="footer-text">
+  今日视此虽近，邈若山河。<br>
+<span id="busuanzi_container_site_pv">
+    <i class="fa fa-area-chart"></i>本站总访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;&nbsp;&nbsp;&nbsp;|
+</span>
+<span id="busuanzi_container_site_uv">
+    &nbsp;&nbsp;&nbsp;<i class="fa fa-tag"></i>您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+</span>
+</div>
+<section class="footer-time">
+    <span class="footer__copyright">
+    <div>
+    <span id="span_dt_dt"> </span>
+    <script language="javascript">
+      function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("12/15/2018 00:56:12");//这个日期是可以修改的
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());//其实仅仅改了这里
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span_dt_dt.innerHTML="goodwell的博客已经独自照看历代星辰 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒啦";
+      }
+      show_date_time();
+    </script>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</span></section>
+<!--
+   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("zmquuMIn4FHVMvzsMvA3RG0V-gzGzoHsz", "LR8efKVYvMbL50bIn4YFl9s8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/src/custom.js"></script>
+  undefined
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/click.js"></script>
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
