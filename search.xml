@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2Funcategorized%2F%E6%95%B0%E6%8D%AE%E6%9F%A5%E6%89%BE%E8%8E%B7%E5%8F%96%2F</url>
-    <content type="text"><![CDATA[数据意识数据的辩证认识 总体数据 样本数据 局部数据(数据孤岛：美国总统) n? 中国教育统计网http://www.stats.edu.cn/n? 中国统计年鉴http://www.stats.gov.cn/tjsj/ndsj/n? 国家数据统计库http://219.235.129.58/welcome.don? 中国宏观数据挖掘分析系统http://number.cnki.net/cyfd/n?? 中国基础教育网http://www.cbe21.com/subject/physics/n?? 中国证券网http://www.cnstock.com/n?? 中国科学气象数据网http://cdc.cma.gov.cn/n?? 中国科学文献服务系统http://sdb.csdl.ac.cn/n?? 中国引文数据库http://ref.cnki.net/knsref/index.aspxn?? 中科院科学数据库http://www.csdb.cn/n?? 中国动物主题数据库http://www.zoology.csdb.cn/n?? 中国统计年鉴下载：http://lib.njue.edu.cn/libtool/data.htm 学科领域数据平台]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2Funcategorized%2F%E9%9C%80%E8%A7%A3%E5%86%B3%2F</url>
-    <content type="text"><![CDATA[数据处理selections are arrays 常用库主要有前端：D3.js , jQuery；CSS：Bootstrap； 后台：Numpy, Sklearn 交互]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F%E5%9B%9E%E6%94%B6%E7%AB%99%2Ftest2%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-      <categories>
-        <category>回收站</category>
-        <category>test2</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[Java_day8]]></title>
     <url>%2FJava%2F%E9%9B%86%E5%90%88%2FJava-day8%2F</url>
     <content type="text"><![CDATA[自用Java笔记（Ⅷ），主要记录Java集合！奋斗ing 1一、集合框架的概述* 1. 集合、数组都是对多个数据进行存储操作的结构，简称Java容器。* 说明：此时的存储，主要指的是内存层面的存储，不涉及持久化的存储（.txt,.jpg,.avi,数据库中）* Java集合可以分为Collection和Map两种体系 Collection接口：单列数据，定义了存取一些对象的方法的集合 List：元素有序、可重复的集合 Set：元素无序、不可重复的集合 Map接口：双列数据，保存具有映射关系”key-value对”的集合 集合框架123456789|----Collection接口：单列集合，用来存储一个一个的对象 |----List接口：存储有序的、可重复的数据 --&gt; “动态”数组 |----ArrayList、LinkedList、Vector |----Set接口：存储无序的、不可重复的数据 --&gt; 数学中的“集合” |----HashSet、LinkedHashSet、TreeSet |----Map接口：双列接口，用来存储一对(key-value)数据 --&gt; y = f(x) |----HashMap、LinkedHashMap、TreeMap、Hashtable、Properties Collection常用方法 12345678910111213141516171819202122232425262728@Test public void test1()&#123; Collection coll = new ArrayList(); //add(Object e): 将元素e添加到集合coll中、 coll.add("AA"); coll.add("BB"); coll.add(123); //自动装箱 coll.add(new Date()); //size(): 获取添加的元素的个数 System.out.println(coll.size());//4 //addAll(Collection coll1): 将coll1集合中的元素添加到当前的集合中 Collection coll1 = new ArrayList(); coll1.add(456); coll1.add("cc"); coll.addAll(coll1); System.out.println(coll.size());//6 System.out.println(coll);//[AA, BB, 123, Thu Oct 31 12:03:02 CST 2019, 456, cc] //clear(): 清空集合元素 coll.clear(); //isEmpty(): 判断当前集合是否为空 System.out.println(coll.isEmpty());//true &#125; contains(Object obj): 判断当前集合中是否包含obj PS:向Collection接口的实现类的对象中添加数据obj时，要求obj所在类要重写equals()。 123456789101112131415161718192021@Testpublic void test2()&#123; Collection coll = new ArrayList(); coll.add(123); coll.add(456); Person p = new Person("Jerry1", 20); coll.add(p); coll.add(new Person("Jerry", 20)); coll.add(new String("Tom")); coll.add(false); //1.contains(Object obj): 判断当前集合中是否包含obj //我们在判断时会调用obj对象所在类的equals() boolean contains = coll.contains(123); System.out.println(contains);//true System.out.println(coll.contains(new String("Tom")));//true System.out.println(coll.contains(new Person("Jerry", 20)));//false System.out.println(coll.contains(p));//true //PS:向Collection接口的实现类的对象中添加数据obj时，要求obj所在类要重写equals()。&#125; containsAll(Collection coll1): 判断形参coll1中的所有元素都存在于当前集合中。 123//2.containsAll(Collection coll1): 判断形参coll1中的所有元素都存在于当前集合中。Collection coll1 = Arrays.asList(123,4567);System.out.println(coll.containsAll(coll1));//false remove(Object obj): 从当前集合中移除obj元素 1234567891011121314151617@Testpublic void test3()&#123; Collection coll = new ArrayList(); coll.add(123); coll.add(456); coll.add(new Person("Jerry", 20)); coll.add(new String("Tom")); coll.add(false); //3.remove(Object obj): 从当前集合中移除obj元素 coll.remove(123); System.out.println(coll); //[456, com.good.java.Person@4ee285c6, Tom, false] coll.remove(new Person("Jerry", 20)); System.out.println(coll); //[456, com.good.java.Person@4ee285c6, Tom, false]&#125; removeAll(Collection coll1): 差集，从当前集合中移除coll1中所有的元素 12345//4.removeAll(Collection coll1): 差集，从当前集合中移除coll1中所有的元素Collection coll1 = Arrays.asList(123,456);coll.removeAll(coll1);System.out.println(coll);//[com.good.java.Person@4ee285c6, Tom, false] retainAll(Collection coll1): 交集，获取当前集合和coll1集合的交集 123456789101112131415@Testpublic void test4() &#123; Collection coll = new ArrayList(); coll.add(123); coll.add(456); coll.add(new Person("Jerry", 20)); coll.add(new String("Tom")); coll.add(false); //5.retainAll(Collection coll1): 交集，获取当前集合和coll1集合的交集 Collection coll1 = Arrays.asList(123,456,789); coll.retainAll(coll1); System.out.println(coll); //[123, 456]&#125; equals(Object obj) 123456789 Collection coll1 = new ArrayList(); coll1.add(123); coll1.add(456);// coll1.add(new Person("Jerry", 20)); coll1.add(new String("Tom")); coll1.add(false); //6.equals(Object obj) System.out.println(coll.equals(coll1)); hashCode(): 返回当前对象的哈希值 123456789Collection coll = new ArrayList();coll.add(123);coll.add(456); coll.add(new Person("Jerry", 20));coll.add(new String("Tom"));coll.add(false);//7.hashCode(): 返回当前对象的哈希值System.out.println(coll.hashCode());//701070075 集合 —&gt; 数组：toArray() 1234567891011121314Object[] arr = coll.toArray();for (int i = 0; i &lt; arr.length; i++) &#123; System.out.println(arr[i]);&#125;//拓展：数组 ---&gt; 集合： 调用Arrays类的静态方法asList()List&lt;String&gt; list = Arrays.asList(new String[]&#123;"aa","bb","cc"&#125;);System.out.println(list);//[aa, bb, cc]List arr1 = Arrays.asList(new int[]&#123;123,456&#125;);System.out.println(arr1.size());//1List arr2 = Arrays.asList(new Integer[]&#123;123,456&#125;);System.out.println(arr2.size());//2 迭代器 List Set接口 Map接口]]></content>
@@ -267,6 +248,18 @@
       </categories>
       <tags>
         <tag>数学建模,计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用数据查找获取方式]]></title>
+    <url>%2F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%2F%E6%95%B0%E6%8D%AE%E6%9F%A5%E6%89%BE%E8%8E%B7%E5%8F%96%2F%E6%95%B0%E6%8D%AE%E6%9F%A5%E6%89%BE%E8%8E%B7%E5%8F%96%2F</url>
+    <content type="text"><![CDATA[常用数据检索网址 数据意识数据的辩证认识 总体数据 样本数据 局部数据(数据孤岛：美国总统) n? 中国教育统计网http://www.stats.edu.cn/n? 中国统计年鉴http://www.stats.gov.cn/tjsj/ndsj/n? 国家数据统计库http://219.235.129.58/welcome.don? 中国宏观数据挖掘分析系统http://number.cnki.net/cyfd/n?? 中国基础教育网http://www.cbe21.com/subject/physics/n?? 中国证券网http://www.cnstock.com/n?? 中国科学气象数据网http://cdc.cma.gov.cn/n?? 中国科学文献服务系统http://sdb.csdl.ac.cn/n?? 中国引文数据库http://ref.cnki.net/knsref/index.aspxn?? 中科院科学数据库http://www.csdb.cn/n?? 中国动物主题数据库http://www.zoology.csdb.cn/n?? 中国统计年鉴下载：http://lib.njue.edu.cn/libtool/data.htm 学科领域数据平台]]></content>
+      <categories>
+        <category>数学建模</category>
+        <category>数据查找获取</category>
+      </categories>
+      <tags>
+        <tag>数学建模</tag>
       </tags>
   </entry>
   <entry>
