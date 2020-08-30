@@ -107,18 +107,18 @@
 
 
 
-<meta name="description" content="数据库介绍数据库的重要性： 实现数据持久化 使用完整的管理系统统一管理，易于查询  相关术语DB：数据库（database）存储数据的“仓库”，保存了一系列有组织的数据。 DBMS：数据库管理系统（Database Management System）数据库是通过DBMS创建何操作的容器。 SQL：结构化查询语言（Structure Query Language）专门用来与数据库通信的语言。 SQ">
+<meta name="description" content="特别基础的MySQL语法">
 <meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL初识">
 <meta property="og:url" content="https://goodwell42.github.io/数据库/MySQL/MySQL初识/index.html">
 <meta property="og:site_name" content="GOODWELL&#39;S BLOG">
-<meta property="og:description" content="数据库介绍数据库的重要性： 实现数据持久化 使用完整的管理系统统一管理，易于查询  相关术语DB：数据库（database）存储数据的“仓库”，保存了一系列有组织的数据。 DBMS：数据库管理系统（Database Management System）数据库是通过DBMS创建何操作的容器。 SQL：结构化查询语言（Structure Query Language）专门用来与数据库通信的语言。 SQ">
+<meta property="og:description" content="特别基础的MySQL语法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-08-30T21:55:15.445Z">
+<meta property="og:updated_time" content="2020-08-30T22:37:05.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL初识">
-<meta name="twitter:description" content="数据库介绍数据库的重要性： 实现数据持久化 使用完整的管理系统统一管理，易于查询  相关术语DB：数据库（database）存储数据的“仓库”，保存了一系列有组织的数据。 DBMS：数据库管理系统（Database Management System）数据库是通过DBMS创建何操作的容器。 SQL：结构化查询语言（Structure Query Language）专门用来与数据库通信的语言。 SQ">
+<meta name="twitter:description" content="特别基础的MySQL语法">
 
 
 
@@ -476,7 +476,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  14,447(字)
+                  14,455(字)
                 </span>
               
 
@@ -513,7 +513,8 @@
       
 
       
-        <h2 id="数据库介绍"><a href="#数据库介绍" class="headerlink" title="数据库介绍"></a>数据库介绍</h2><h3 id="数据库的重要性："><a href="#数据库的重要性：" class="headerlink" title="数据库的重要性："></a>数据库的重要性：</h3><ul>
+        <p>特别基础的MySQL语法<br><a id="more"></a></p>
+<h2 id="数据库介绍"><a href="#数据库介绍" class="headerlink" title="数据库介绍"></a>数据库介绍</h2><h3 id="数据库的重要性："><a href="#数据库的重要性：" class="headerlink" title="数据库的重要性："></a>数据库的重要性：</h3><ul>
 <li>实现数据持久化</li>
 <li>使用完整的管理系统统一管理，易于查询</li>
 </ul>
@@ -586,10 +587,10 @@
 </li>
 </ul>
 <h3 id="SQL的语言分类"><a href="#SQL的语言分类" class="headerlink" title="SQL的语言分类"></a>SQL的语言分类</h3><ul>
-<li>DQL（Data Query Language）：数据查询语言<br>  select </li>
-<li>DML(Data Manipulate Language):数据操作语言<br>  insert 、update、delete</li>
-<li>DDL（Data Define Languge）：数据定义语言<br>  create、drop、alter</li>
-<li>TCL（Transaction Control Language）：事务控制语言<br>  commit、rollback</li>
+<li>DQL（Data Query Language）：数据查询语言<br>select </li>
+<li>DML(Data Manipulate Language):数据操作语言<br>insert 、update、delete</li>
+<li>DDL（Data Define Languge）：数据定义语言<br>create、drop、alter</li>
+<li>TCL（Transaction Control Language）：事务控制语言<br>commit、rollback</li>
 </ul>
 <h2 id="DQL语言"><a href="#DQL语言" class="headerlink" title="DQL语言"></a>DQL语言</h2><h3 id="基础查询"><a href="#基础查询" class="headerlink" title="基础查询"></a>基础查询</h3><p>格式：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> 查询列表</span><br><span class="line"><span class="keyword">from</span> 表</span><br></pre></td></tr></table></figure>
@@ -812,9 +813,8 @@
 </li>
 <li><p>按功能分类：</p>
 <ul>
-<li><p>内连接：</p>
-<pre><code>等值连接
-</code></pre><p>​    非等值连接</p>
+<li><p>内连接：<br>等值连接</p>
+<p>​    非等值连接</p>
 <p>​    自连接</p>
 </li>
 <li><p>外连接：</p>
@@ -1055,8 +1055,9 @@
 </ol>
 <p>​    特点：</p>
 <pre><code>1. M整数+小数的位数；D代表效数部位。超出范围则插入临界值。
- 2. M和D都可以省略，但如果是decimal默认(M,D)为(10,0);如果是float和double，则会根据插入的数值的精度来决定精度.
- 3. 定点型的精确度较高，如果要求插入数值的精度较高如货币运算等则考虑使用
+
+   2. M和D都可以省略，但如果是decimal默认(M,D)为(10,0);如果是float和double，则会根据插入的数值的精度来决定精度.
+   3. 定点型的精确度较高，如果要求插入数值的精度较高如货币运算等则考虑使用
 </code></pre><p>3、字符型（串数据）</p>
 <p>​    较短的文本：char、 varchar较长的文本；text、blob（较长的二进制数据）;bit(M)位类型;binary和varbinary包含二进制字符串;Enum类型，要求插入的值必须属于列表中指定的值之一；set类型保存集合，类型一次可以选取多个成员，而Enum只能选一个。</p>
 <table>
@@ -1638,8 +1639,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/uncategorized/Java小结1/" rel="next" title="Java小结1">
-                <i class="fa fa-chevron-left"></i> Java小结1
+              <a href="/数据库/MySQL/MySQL语法提纲/" rel="next" title="MySQL语法提纲">
+                <i class="fa fa-chevron-left"></i> MySQL语法提纲
               </a>
             
           </div>
@@ -1647,6 +1648,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/uncategorized/LaTeX/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -1736,7 +1741,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
