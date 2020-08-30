@@ -1,10 +1,15 @@
 ---
-title: Java_day1
+title: Java_day2
 date: 2019-08-16 11:36:14
-tags:
-
+tags: Java
+toc: true
+categories: 
+- Java
+- 概念与语法
 
 ---
+
+自用Java笔记（Ⅱ），记录Java基本概念与语法！奋斗ing<!-- more -->
 
 ### 基本概念
 
