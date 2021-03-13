@@ -2,8 +2,15 @@
 <search>
   <entry>
     <title><![CDATA[Java-day9]]></title>
-    <url>%2Funcategorized%2FJava-day9%2F</url>
-    <content type="text"></content>
+    <url>%2FJava%2F%E9%9B%86%E5%90%88%2FJava-day9%2F</url>
+    <content type="text"><![CDATA[自用Java笔记（Ⅷ），主要记录Java集合！奋斗ing]]></content>
+      <categories>
+        <category>Java</category>
+        <category>集合</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title></title>
