@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://goodwell42.github.io/Java/%E5%B0%8F%E7%BB%93/Java-summary1/</loc>
+    
+    <lastmod>2021-03-13T15:50:16.057Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://goodwell42.github.io/Java/%E9%9B%86%E5%90%88/Java-day9/</loc>
     
     <lastmod>2021-03-13T15:04:19.096Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://goodwell42.github.io/Java/%E9%9B%86%E5%90%88/Java-day8/</loc>
     
     <lastmod>2021-03-13T14:57:40.894Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://goodwell42.github.io/uncategorized/Java-summary1/</loc>
-    
-    <lastmod>2021-03-13T14:55:25.650Z</lastmod>
     
   </url>
   
@@ -65,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://goodwell42.github.io/archives/index.html</loc>
-    
-    <lastmod>2020-08-06T07:45:42.130Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://goodwell42.github.io/about/index.html</loc>
     
     <lastmod>2020-08-06T07:45:42.130Z</lastmod>
@@ -80,6 +73,13 @@
   
   <url>
     <loc>https://goodwell42.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-08-06T07:45:42.130Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://goodwell42.github.io/archives/index.html</loc>
     
     <lastmod>2020-08-06T07:45:42.130Z</lastmod>
     
